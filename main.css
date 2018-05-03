@@ -1,0 +1,381 @@
+body, html {
+  font-family: "Work Sans", sans-serif; /*Google's Font*/
+  width: 100%;
+  min-height: 100%;
+  max-width: 1330px; /*the maximal width of the page's content*/
+  margin: auto;
+  /*display: block;*/
+}
+
+header, footer, section, main, div {
+  display: block;
+}
+/*all the content is there, including header*/
+.site-container {
+  float: none;
+  /*border: 1px solid #969392;*/
+  box-shadow: 5px 5px 20px #ccc;
+}
+
+header {
+  width: 93%; /*so that it matches the vertical alignment of the content*/
+  margin-left: auto; /*with both margins, the content is centered*/
+  margin-right: auto;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+/*Udacity's logo*/
+.header-logo {
+  height: 62px;
+  min-width: 52px;
+  float: left; /* enables the titles to be besides the logo*/
+  vertical-align: top;
+  fill: #02b3e4; /*like color, but for svg. So, "fill"*/
+}
+
+.header-title {
+  font-weight: 200; /*a thin font*/
+}
+
+.header-subtitle {
+  font-weight: 600; /*equivalent to bold*/
+}
+
+.main-titles {
+  text-align: right;
+  width: 100%;
+  color: #2d3c49;
+  line-height: 0.74; /*vertical space between two lines*/
+  margin-top: 0.5rem;
+}
+
+.text-line {
+  fill: #7d97ad; /*this is the same as color, but for xml*/
+}
+
+.site-container {
+  float:none; /*nothing will float/be placed left*/
+  margin-left: auto; /*with both margins, the content is centered*/
+  margin-right: auto;
+  max-width: 1330px;
+  padding:0;
+  border: 1px solid #969392;
+  box-shadow: 5px 5px 20px #ccc;
+}
+
+.site-content {
+  box-sizing: border-box;
+  width: 97%; /*so that the main tag takes the whole space*/
+  margin-left:auto; /*with both margins, the content is centered*/
+  margin-right: auto;
+}
+/*div of the owl image*/
+.cover-intro {
+  padding-bottom: 0px;
+  padding-top: 20px;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*owl's svg code*/
+.project-main-cover {
+  overflow:hidden; /*without scrollbars*/
+  position: relative;
+  width: 100%;
+}
+/*beginn of owl svg*/
+.corp{
+  fill:#7d97ad;
+}
+.w-eye{ /*white eyes*/
+  fill:#FFFFFF;
+}
+.gray{
+  fill:#2d3c49;
+}
+.nose{
+  fill:#ededed;
+  stroke:#1d1d1b;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+}
+.wing{
+  opacity:0.36;
+  fill:#2d3c49;
+}
+.bubble{
+  fill:none;
+  stroke:#1d1d1b;
+  stroke-width:0.5846;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+}
+.welcome {
+  font-family: 'Nanum Pen Script', cursive; /*Another Google Font*/
+}
+/*ends of owl svg*/
+
+/*button*/
+.show-hide {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 1.5em;
+  text-align: center;
+  align-items: center;
+  margin-top: 1.45em;
+  background-color: transparent;
+  border-radius: 5px 5px;
+  border: solid 1px #607d8b36;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  float: right;
+  cursor: pointer; /*a hand appears, when the mouse is over the button*/
+}
+
+/*Div with text introduction*/
+#text-box { /*Without this, the page loads the text box being showed*/
+    display: none;
+}
+/*Div with text introduction within the button*/
+#text-box, .intro-text { /*the #text-box is for the --JavaScript function.*/
+  padding-left: 0.3em;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+  padding-top: 2em;
+  padding-bottom: 2%; /*a little padding gives more space to the text and makes the hyphenization more natural*/
+  background-color: #607d8b38;
+  margin-top: 2.6em;
+  border-radius: 5px;
+}
+
+/*text inside the show/hide button*/
+.intro-text {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  text-align: justify;
+  text-indent: 1.5em; /*space before starting a paragraph*/
+  padding-top: 1em;
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+.paragraf {
+  margin-top: 0; /*the text is more to the top like this*/
+}
+
+/*line after the div for better spacing between div and title*/
+hr { /*through, the hr is invisible. It looked better than padding*/
+  width: 99%;
+  border: solid 0.5px #607d8b00;
+  background-color: transparent;
+  color: transparent;
+}
+
+/*h2 Featured Work*/
+.secondary-title {
+  color: #7d97ad;
+  font-size: 2em;
+  font-weight: 500;
+  padding-left: 0.4rem;
+}
+
+/*div containing all projects*/
+.projects {
+  padding-bottom: 4rem;
+  text-align: center;
+  width: 100%;
+}
+.project-cover, .cover-caption {
+  overflow:hidden; /*without scrollbars*/
+  position: relative;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.project-cover { /*image*/
+  width: 100%;
+}
+
+.cover-caption {
+  line-height: 0.4em;
+}
+
+.project-name {
+  color: #2d3c49;
+  font-size: 1.3em; /*before 1.5em*/
+}
+
+.project-link {
+  padding-bottom: 5%;
+  font-size: 1.1em;
+  word-spacing: normal;
+  word-wrap: break-word;
+  line-height: 1.3em;
+}
+
+
+}
+/*Responsive*/
+@media screen and (max-width: 359px){
+  .header-logo {
+    height: 42px;
+    margin-top: -0.5em; /*so that the logo fits perfectly with the title*/
+    margin-left: -0.3em;/*so that the logo fits perfectly with the underline*/
+  }
+  .main-titles {
+    margin-top: 2em;
+    line-height: 0.4;
+    margin-bottom: -0.5em; /*to approximate the underline to the title*/
+  }
+  .header-title {
+    font-size: 1.7em;
+  }
+  .header-subtitle {
+    font-size: 1em;
+  }
+  #text-box, .intro-text {
+    margin-top: 2.99em; /*Align the text box with the button*/
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width:410px) {
+  .header-title {
+    font-size: 1.8em;
+  }
+  .header-subtitle {
+    font-size: 1em;
+  }
+  #text-box, .intro-text {
+    margin-top: 2.99em; /*Align the text box with the button*/
+  }
+}
+
+@media screen and (min-width:411px) and (max-width:599px) {
+  .header-title {
+    font-size: 2.1em;
+  }
+  .header-subtitle {
+    font-weight: 540;
+    font-size: 1.2em;
+  }
+  #text-box, .intro-text {
+    margin-top: 2.99em; /*Align the text box with the button*/
+  }
+}
+
+@media screen and (min-width:600px) and (max-width:767px) {
+  .header-logo {
+    height:82px;
+  }
+  .header-title {
+    font-size: 3.2em;
+  }
+  .header-subtitle {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 1.3rem;
+  }
+  .header-logo {
+    height:83px;
+    margin-top: 1.7em;
+  }
+  .main-titles {
+    line-height: 0.4;
+  }
+  .header-title {
+    font-size: 3.5em;
+  }
+  .header-subtitle {
+    font-size: 1.6em;
+  }
+  .show-hide {
+    font-size: 2em;
+  }
+  #text-box, .intro-text {
+    font-size: 2em;
+  }
+  .secondary-title {
+    font-size: 2.9em;
+    padding-left: 2.2rem;
+  }
+  .project-name {
+    font-size: 1.8em;
+  }
+  .project-link {
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (min-width:0px) and (max-width: 699px) {
+  .box {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+@media screen and (min-width:480px) and (max-width: 1024px) {
+  .intro-text {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera. Makes 3 columns */
+    -moz-column-count: 2; /* Firefox. Makes 3 columns*/
+    column-count: 2; /*Other browsers. Makes 3 columns*/
+    line-height: 1.5em;
+    -webkit-hyphens: auto;/* Chrome, Safari, Opera */
+    -moz-hyphens: auto;/* Firefox */
+    -ms-hyphens: auto;/* Microsoft */
+    hyphens: auto; /*For Firefox and others. Seems not to work on Chrome*/
+    word-wrap: break-word; /*break a word if it is larger than the div*/
+    column-gap: 1.3em;/*gap between columns*/
+  }
+}
+
+@media screen and (min-width:1025px) {
+  .site-container {
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+  .intro-text {
+    padding-top: 1.5em;
+    -webkit-column-count: 3; /* Chrome, Safari, Opera. Makes 3 columns */
+    -moz-column-count: 3; /* Firefox. Makes 3 columns*/
+    column-count: 3; /*Other browsers. Makes 3 columns*/
+    text-align: justify;
+    -webkit-hyphens: auto;/* Chrome, Safari, Opera */
+    -moz-hyphens: auto;/* Firefox */
+    -ms-hyphens: auto;/* Microsoft */
+    hyphens: auto; /*For Firefox and others. Seems not to work on Chrome*/
+    hyphens: manual; /*This also works for Chrome*/
+    word-wrap: break-word;
+    column-gap: 2.4em;/*gap between columns*/
+  }
+  .projects { /*div containing all projects*/
+    display: flex; /*display the flexible length on flexible items*/
+    flex-wrap: wrap; /*flex items will wrap onto multiple lines, from top to bottom. If there is no more space left, they will go below*/
+  }
+  .box { /*general box containing project-cover, cover-caption, project-name and project-link*/
+    text-align: center;
+    width: 100%;
+  }
+  .one {
+    width: 30%;
+    order: 5; /*it seems not to be really needed, but just in case, they tell the order of divs*/
+    float: left; /*enables the following div to be left*/
+    padding-right: 2%;
+    padding-left: 3%; /*distance between divs*/
+  }
+  .two {
+    width: 30%;
+    order: 6;
+    float: left;
+    padding-right: 3%;
+  }
+  .three {
+    width: 30%;
+    order: 7;
+    float: left;
+  }
+}
