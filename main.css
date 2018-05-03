@@ -26,8 +26,8 @@ header {
 }
 /*Udacity's logo*/
 .header-logo {
-  height: 62px;
-  min-width: 52px;
+  max-height: 62px;
+  max-width: 52px;
   float: left; /* enables the titles to be besides the logo*/
   vertical-align: top;
   fill: #02b3e4; /*like color, but for svg. So, "fill"*/
@@ -38,7 +38,7 @@ header {
 }
 
 .header-subtitle {
-  font-weight: 600; /*equivalent to bold*/
+  font-weight: 400; /*equivalent to bold*/
 }
 
 .main-titles {
@@ -107,7 +107,7 @@ header {
 .bubble{
   fill:none;
   stroke:#1d1d1b;
-  stroke-width:0.5846;
+  stroke-width:0.5846px;
   stroke-linecap:round;
   stroke-miterlimit:10;
 }
@@ -125,10 +125,11 @@ header {
   margin-top: 1.45em;
   background-color: transparent;
   border-radius: 5px 5px;
-  border: solid 1px #607d8b36;
+  border: solid 0.5px grey; /***this was not accepted by the css validator #607d8b36. But it looks nice on Chrome.***/
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
+  margin-bottom: 1em;
   float: right;
   cursor: pointer; /*a hand appears, when the mouse is over the button*/
 }
@@ -144,8 +145,9 @@ header {
   padding-right: 0.3em;
   padding-top: 2em;
   padding-bottom: 2%; /*a little padding gives more space to the text and makes the hyphenization more natural*/
-  background-color: #607d8b38;
-  margin-top: 2.6em;
+  background-image: linear-gradient(to right, blue, grey);
+  /***background-color: #607d8b38; This is actually the best solution for transparency with color and "background-color: rgb(96,125,139,0.22);" This is also good, but somewho does not work for the css validator as well*/
+  margin-top: 2.9em;
   border-radius: 5px;
 }
 
@@ -166,8 +168,8 @@ header {
 /*line after the div for better spacing between div and title*/
 hr { /*through, the hr is invisible. It looked better than padding*/
   width: 99%;
-  border: solid 0.5px #607d8b00;
-  background-color: transparent;
+  border: solid 0.5px transparent;
+  /*background-color: transparent;*/
   color: transparent;
 }
 
@@ -177,6 +179,7 @@ hr { /*through, the hr is invisible. It looked better than padding*/
   font-size: 2em;
   font-weight: 500;
   padding-left: 0.4rem;
+  padding-bottom: 1em;
 }
 
 /*div containing all projects*/
@@ -213,19 +216,38 @@ hr { /*through, the hr is invisible. It looked better than padding*/
   line-height: 1.3em;
 }
 
-
-}
 /*Responsive*/
-@media screen and (max-width: 359px){
+@media screen and (max-width: 320px) {
+  .header-logo {
+     margin-top: 0em; /*aligns logo vertically with title*/
+     max-width: 46px;
+     max-height:35px;
+  }
+  .main-titles {
+     line-height: 0.4;
+  }
+  .header-title {
+     font-size: 1.6em;
+  }
+  .header-subtitle {
+     font-size: 0.7em;
+     margin-bottom: 0; /*puts the text-line closer to the subtitle*/
+  }
+  #text-box, .intro-text {
+    margin-top: 2.99em; /*Align the text box with the button*/
+  }
+}
+
+@media screen and (min-width:321px) and (max-width: 359px) {
   .header-logo {
     height: 42px;
-    margin-top: -0.5em; /*so that the logo fits perfectly with the title*/
-    margin-left: -0.3em;/*so that the logo fits perfectly with the underline*/
+    margin-top: 0.1em; /*so that the logo fits perfectly with the title*/
+    margin-left: 0.1em;/*so that the logo fits perfectly with the underline*/
   }
   .main-titles {
     margin-top: 2em;
     line-height: 0.4;
-    margin-bottom: -0.5em; /*to approximate the underline to the title*/
+    margin-bottom: 0.1em; /*to approximate the underline to the title*/
   }
   .header-title {
     font-size: 1.7em;
@@ -239,6 +261,9 @@ hr { /*through, the hr is invisible. It looked better than padding*/
 }
 
 @media screen and (min-width: 360px) and (max-width:410px) {
+  .header-logo {
+    margin-top: 0.1em;
+  }
   .header-title {
     font-size: 1.8em;
   }
@@ -255,7 +280,7 @@ hr { /*through, the hr is invisible. It looked better than padding*/
     font-size: 2.1em;
   }
   .header-subtitle {
-    font-weight: 540;
+    font-weight: 400; /*This looks better than 600*/
     font-size: 1.2em;
   }
   #text-box, .intro-text {
@@ -318,6 +343,7 @@ hr { /*through, the hr is invisible. It looked better than padding*/
     text-align: center;
   }
 }
+
 @media screen and (min-width:480px) and (max-width: 1024px) {
   .intro-text {
     -webkit-column-count: 2; /* Chrome, Safari, Opera. Makes 3 columns */
@@ -379,3 +405,4 @@ hr { /*through, the hr is invisible. It looked better than padding*/
     float: left;
   }
 }
+
