@@ -174,17 +174,10 @@ header {
   margin-bottom: 0.5em;
 }
 
-
-}
 .paragraf {
   margin-top: 0; /*the text is more to the top like this*/
 }
 
-hr {
-  width: 99%;
-  border: solid 0.5px transparent;
-  color: transparent;
-}
 /*h2 Featured Work*/
 .secondary-title {
   color: #7d97ad;
