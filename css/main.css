@@ -180,21 +180,20 @@ header {
   margin-top: 0; /*the text is more to the top like this*/
 }
 
-/*line after the div for better spacing between div and title*/
-hr { /*through, the hr is invisible. It looked better than padding*/
+hr {
   width: 99%;
   border: solid 0.5px transparent;
-  /*background-color: transparent;*/
   color: transparent;
 }
-
 /*h2 Featured Work*/
 .secondary-title {
   color: #7d97ad;
   font-size: 2em;
   font-weight: 500;
   padding-left: 0.4rem;
+  padding-top: 2.2em;
   padding-bottom: 1em;
+  text-align: left;
 }
 
 /*link*/
