@@ -4,7 +4,6 @@ body, html {
   min-height: 100%;
   max-width: 1330px; /*the maximal width of the page's content*/
   margin: auto;
-  /*display: block;*/
 }
 
 header, footer, section, main, div {
@@ -71,7 +70,7 @@ header {
 }
 /*div of the owl image*/
 .cover-intro {
-  padding-bottom: 0px;
+  padding-bottom: 0;
   padding-top: 20px;
   width: 96%;
   margin-left: auto;
@@ -84,12 +83,12 @@ header {
   position: relative;
   width: 100%;
 }
-/*beginn of owl svg*/
+/*beginn of owl svg code*/
 .corp{
   fill:#7d97ad;
 }
 .w-eye{ /*white eyes*/
-  fill:#FFFFFF;
+  fill:#fff; /*#ffffff*/
 }
 .gray{
   fill:#2d3c49;
@@ -114,7 +113,7 @@ header {
 .welcome {
   font-family: 'Nanum Pen Script', cursive; /*Another Google Font*/
 }
-/*ends of owl svg*/
+/*ends of owl svg code*/
 
 /*button*/
 .show-hide {
@@ -125,7 +124,7 @@ header {
   margin-top: 1.45em;
   background-color: transparent;
   border-radius: 5px 5px;
-  border: solid 0.5px grey; /***this was not accepted by the css validator #607d8b36. But it looks nice on Chrome.***/
+  border: solid 0.5px grey; /***this was not accepted by the css validator: #607d8b36. But it looks nice on Chrome.***/
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
@@ -137,6 +136,7 @@ header {
 #text-box { /*Without this, the page loads the text box being showed*/
     display: none;
 }
+
 /*Div with text introduction within the button*/
 #text-box, .intro-text { /*the #text-box is for the --JavaScript function.*/
   padding-left: 0.3em;
@@ -159,6 +159,7 @@ header {
   padding-top: 1em;
   font-family: 'Nanum Pen Script', cursive;
 }
+
 .box-title {
   font-weight: 200;
   font-size: 3.1em;
@@ -167,10 +168,11 @@ header {
   text-indent: initial; /*so that it is not like the paragraph; with a little margin on the left*/
   text-align: center;
 }
+
 .fourth-title {
   text-indent: initial;
   text-align: center;
-  margin-top: 0em;
+  margin-top: 0;
   margin-bottom: 0.5em;
 }
 
@@ -184,7 +186,7 @@ header {
   font-size: 2em;
   font-weight: 500;
   padding-left: 0.4rem;
-  padding-top: 0.5em;
+  padding-top: 2em;
   padding-bottom: 1em;
   text-align: left;
 }
@@ -201,11 +203,12 @@ a {
   text-align: center;
   width: 100%;
 }
+
 .project-cover, .cover-caption {
   overflow:hidden; /*without scrollbars*/
   position: relative;
-  margin-left: 0%;
-  margin-right: 0%;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .project-cover { /*image*/
