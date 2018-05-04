@@ -145,8 +145,8 @@ header {
   padding-right: 0.3em;
   padding-top: 2em;
   padding-bottom: 2%; /*a little padding gives more space to the text and makes the hyphenization more natural*/
-  background-image: linear-gradient(to right, blue, grey);
-  /***background-color: #607d8b38; This is actually the best solution for transparency with color and "background-color: rgb(96,125,139,0.22);" This is also good, but somewho does not work for the css validator as well*/
+  background-color: #e8e8e8;
+  /*background-color: #607d8b38; This is actually the best solution for transparency with color and "background-color: rgb(96,125,139,0.22);" This is also good, but somewho does not work for the css validator as well*/
   margin-top: 2.9em;
   border-radius: 5px;
 }
@@ -180,6 +180,12 @@ hr { /*through, the hr is invisible. It looked better than padding*/
   font-weight: 500;
   padding-left: 0.4rem;
   padding-bottom: 1em;
+}
+
+/*link*/
+a.project-link {
+  text-decoration: 	none currentcolor solid;
+  color: grey;
 }
 
 /*div containing all projects*/
@@ -405,4 +411,3 @@ hr { /*through, the hr is invisible. It looked better than padding*/
     float: left;
   }
 }
-
