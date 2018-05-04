@@ -1,0 +1,78 @@
+div.contentOfBody { /* This is the main div */
+  padding:0.5em;
+  border:1px solid #969392;
+  box-shadow: 5px 5px 20px #ccc;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 325px;
+  max-width: 500px;
+  background: radial-gradient(circle,#000000 60%, #ffffff 0%); /* black background circle */
+}
+
+h3 {  /* Titel: Dalmatian */
+  text-align: center; /* I had before padding-left: 10px; */
+  font-family: 'Josefin Slab', serif;
+  font-weight: 100;
+}
+
+div#widthOfBody { /* Second div of the body, contains ul and p */
+  width: 320px;
+}
+
+p { /* main text, excluded footer */
+  padding:5px 5px;
+  text-align:justify;
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.27em;
+  line-height: 1.5;
+  -webkit-hyphens: auto;/* Chrome, Safari, Opera */
+  -moz-hyphens: auto;/* Firefox */
+  -ms-hyphens: auto;/* Microsoft */
+  hyphens: auto; /*For Firefox and others. Seems not to work on Chrome*/
+  word-wrap: break-word; /*break a word if it is larger than the div*/
+}
+
+img.animated-gif { /* a gif from a url */
+  display: block;
+  width: 92%; /* to make it feet 300px of width */
+  height: auto;
+  padding:5px 5px 15px 5px;
+  margin:auto;
+  }
+
+div.factsDalma {
+  border:1px solid #969392; /* #969392 equals a gray color */
+  padding: 5px;
+  width:290px;
+  margin:auto;
+  background-color: rgba(255,255,255, 1); /* that is white with 100% color. The "a" is for the colorness; values between 0 and 1. 1 is the highest value */
+  
+}
+
+.bold { /* bold for the li classes */
+  font-weight: bold;
+}
+
+.colorfulGray {
+  color: #366277;
+  font-family:'Josefin Slab', serif;
+  font-size: 1.2em;
+}
+
+
+ul { 
+  list-style-type: none; /* my little list without circle */
+  padding: 5px;
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.2em;
+  line-height: 1.25;
+}
+
+.pFooter { /* p for footer, so that it can be at the right corner ^^ */
+    text-align: right;
+}
+
+.colorOfLink { /* change color and take out the line of the footer's link  */
+    color: black; /* make the text of the footer black */
+    text-decoration-line: none; /* take out the line of the footer */
+}

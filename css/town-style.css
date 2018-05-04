@@ -1,0 +1,625 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  color: #424242;
+  font-size: 16px; /* This was before --> footer: "font-size: 12px;"  */
+  line-height: 1.2em;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0; /* to take the margin from title in the black box out... */
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+
+
+* {
+  box-sizing: border-box; /* enables the <li> text to be next the picture. */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Common */
+
+.news__more {
+  float: right;
+  font-size: .8em;
+  color: #333;
+  text-decoration: none;
+}
+
+
+/* Header*/
+
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+
+.header__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__logo {
+  height: 72px;
+  margin-right: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+  margin-left: 12px; /* distance from viewport beginning until logo */
+}
+
+/*svg code logo*/
+.tall{
+  fill:#878787;
+}
+.w1{
+  fill:#c6c6c6;
+}
+.w2{
+  fill:#9d9d9c;
+}
+/*end for svg code logo*/
+
+.header__title {
+  font-weight: 300; /* to make the title more thin */
+  font-size: 3em;
+  margin: 0.75em 0.25em;
+  display: inline-block; /* to make the title follow the logo */
+  color: #212121;
+}
+
+
+/* Top Level Navigation*/
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+
+/* Main content */
+
+main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Content and Hero */
+
+.hero {
+  width: 100%;
+  position: relative;
+  background-image: url("./images/observing-the-stars-focus.jpg");
+  background-size: cover;
+  min-height: 300px;
+}
+
+.hero article { /* article upon the puppy */
+  box-sizing: border-box;
+  background-color: #000;  /* black background color  */
+  background-color: rgba(0, 0, 0, 0.7); /* dark gray background color  */
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+}
+
+
+/* Top News */
+
+.top-news {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em;
+  width: 100%;
+}
+
+.news__title {
+  font-weight: 300;
+  border-bottom: 1px solid #E0E0E0;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.top-news__item { /* <li>  */
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em 0;
+  line-height: 19.2px;
+  text-align: justify; /* to let the text align left and right */
+}
+
+.top-news__item:before {
+  content: "» ";
+}
+
+.top-news__item:last-child {
+  border-bottom: none;
+}
+
+.top-news__item a {
+  text-decoration: none;
+  color: #666;
+  padding: 1.5em inherit;
+}
+
+.top-news__item a:hover, /* hover with the mouse... */
+.top-news__item a:active {
+  text-decoration: underline;
+}
+
+
+/* Sport Scores */
+
+.scores {
+  padding-top: 1em;
+  flex-grow: 1; /* makes the box fit in the viewport */
+  width: 100%;
+  overflow-x: auto; /*enables horizontal scrolling when table is to big for the screen*/
+}
+
+.scores__table {
+  width: 100%;
+  border-collapse: collapse; /* takes the separation's lines out */
+}
+
+.scores__table th,
+.scores__table td {
+  padding: 1em;
+}
+
+.scores__table th {
+  color: #fff;
+  font-weight: 300;
+  background-color: #78909C;
+}
+
+.scores__table tr:nth-child(1) th:nth-child(3) {
+  text-align: right;
+}
+
+.scores__table tr:nth-child(1) th:nth-child(5) {
+  text-align: left;
+}
+
+.scores__table tr:nth-child(odd) td {
+  background-color: #fff;  /* white color for the odd cells */
+}
+
+.scores__table tr:nth-child(even) td {
+  background-color: #eceff1; /*rosa color for the even cells */
+}
+
+.scores__table td.winner {
+  font-weight: bold;
+}
+
+.scores__table td:nth-child(3) {
+  text-align: right;
+}
+
+.scores__table td:nth-child(1),
+.scores__table td:nth-child(2) {
+  text-align: center;
+}
+
+
+/* Weather*/
+
+.weather {
+  flex-grow: 1;
+  padding: 1em;
+}
+
+.weather__location {
+  display: block;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.weather__ {
+  display: block;
+  font-size: 1.2em;
+}
+
+.weather__today {
+  width: 60%;
+  vertical-align: middle;
+}
+
+.weather__today__image {
+  vertical-align: middle;
+  width: 160px;
+  height:auto;
+  padding-top: 10px;
+}
+
+.weather__today__temp {
+  font-size: 3em;
+}
+
+.weather__today__deg {
+  font-size: 2em;
+  display: inline;
+}
+
+.weather__next__item {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.weather__next__item span {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.weather__next__image {
+  width: 85%;
+  height: 50px;
+}
+/*For weather svg code*/
+/*Gradients*/
+.g-cor { /*yellow color for the sun*/
+  stop-color: rgb(255,255,0);
+}
+.b-cor { /*gray color for the gradient of the sun*/
+  stop-color: rgb(80,80,0);
+}
+/*End of gradients*/
+
+/*beginning of svg code of weather__next__image "sunny" FUNCTIONA*/
+.yellow{
+  fill:#ffed00;
+}
+.my-gradient{
+  fill:url(#grad3);
+}
+/*ends of svg code of weather__next__image "sunny"*/
+/*beginning of svg code of weather__next__image "sunny-cloudy" FUNCIONA*/
+.dark-grad{
+  stop-color:rgb(3,4,0);
+}
+.sun{
+  fill:url(#grad-sun);
+}
+.cloud{
+  fill:url(#grad-cloud);
+}
+/*Ends of svg code of weather__next__image "sunny-cloudy"*/
+
+/*beginning of "Three Clouds" svg code*/
+.white-grad{
+  stop-color:rgb(255,255,255);
+}
+.dark-grad{
+  stop-color:rgb(3,4,0);
+}
+.gOne{
+  fill:url(#cloud-one);
+}
+.gTwo{
+  fill:url(#cloud-two);
+}
+.gThree{
+  fill:url(#cloud-three);
+}
+/*ends of "Three Clouds" svg code*/
+
+/*beginning of "cloudy-rainy" little svg*/
+.w-gota {
+  stop-color:rgb(0,191,255);
+  stop-opacity:1;
+}
+.wh-cloud {
+  stop-color:rgb(255,255,255);
+  stop-opacity:1;
+}
+.esc-cor {
+  stop-color:rgb(20,20,0);
+  stop-opacity:1;
+  }
+.wa1 {
+  fill:url(#gota1);
+  }
+.wa2 {
+  fill:url(#gota2);
+}
+.wa3 {
+  fill:url(#gota3);
+}
+.cl-one {
+  fill:url(#c-one);
+}
+.cl-two {
+  fill:url(#c-two);
+}
+.cl-three {
+  fill:url(#c-three);
+}
+/*end of "cloudy-rainy" little svg*/
+/*end of "for weather svg code"*/
+
+/* Recent News  */
+
+.recent-news {
+  flex-grow: 1;
+  clear: both;
+  padding: 1em;
+}
+
+.snippet {
+  clear: both;
+  margin: 24px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.snippet__thumbnail {
+  width: 100px;
+  float: left;
+  margin-right: 1em;
+  order: 1;
+  width: 30%;
+  }
+}
+
+.snippet__title a {
+  text-decoration: none;
+  color: #666;
+  padding: 1.5em inherit;
+}
+
+.snippet__title a:hover,
+.snippet__title a:active {
+  text-decoration: underline;
+}
+
+.snippet__thumbnail > img {
+  width: 100%;
+}
+
+.snippet__title { /*<h3> */
+  order: 0;
+  width: 100%; /*without this, the picture under, glues to the tittle in the right */
+  margin: 0 0 0.5em;
+  font-weight: 500; /* this makes the title "less" bold */
+}
+
+.snippet__description { /* for <p>*/
+  text-align: justify;
+  order: 2;
+  width: 70%;
+  margin: 0;
+  padding: 0 0 0 1em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #E0E0E0;
+  padding: 1em;
+  width: 100%;
+  order:11; /* puts the footer at the end */
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  padding: 1.5em;
+}
+
+/* Responsive */
+
+.content {
+  display: flex; /* to position elements right or left without floats */
+  flex-wrap: wrap; /* to make the elements inside of the content wrap to the next line (like one after the other) */
+}
+
+.header__menu {
+  display: none; /* to not show the header's menu */
+}
+
+.hero, .top-news,.scores,.weather, .recent-news {
+  order: 10; /* put all the above classes in place 10 */
+}
+
+/*Media Queries*/
+@media screen and (max-width:449px) {
+  .header__inner {
+    padding-bottom: 0.5em;
+  }
+}
+
+@media screen and (max-width: 450px) { /* Latest news */
+  .snippet__thumbnail {
+    display: none; /* the foto can't be seen until the viewport is 450px */
+  }
+
+  .snippet__description {
+    width: 100%; /* And so, the text description takes 100% */
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 468px) {
+  .snippet__thumbnail {
+    width: 30%;
+    height: 150px;
+    margin-right: 0;
+  }
+
+  .snippet__description {
+    -webkit-line-clamp: 4;
+    max-height: 4.9em
+  }
+}
+
+/*Others */
+@media screen and (max-width: 610px) {
+  .header__logo { /* logo of the website */
+    height: 48px; /* logo's height */
+    margin-right: 0.5em; /* Augment margin right to 0.5em  */
+  }
+  .header__title {
+    line-height: 100%; /* relative vertical distance between letters */
+    font-size: 2em;
+    vertical-align: bottom;
+    width: 60%; /* This resolved the problem of the title beeing behind the burguer, when the viewport was between 381 and ca. 399px. */
+    margin: 0.3em 0.25em; /* This makes the title fit better with the logo (puts it on the middle)*/
+  }
+  .nav { /* navigation menu */
+    z-index: 10;
+    background-color: #fff; /* white background color for the navigation menu */
+    width: 300px;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease; /* animation "ease" for the navigation menu. It displays when the burguer menu is clicked */
+  }
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left; /* places the text at the left */
+  }
+  .header__menu {
+    display: inline-block; /* without this, the burguer is no shown at all */
+    position: absolute; /* without this, the burguer goes to the right */
+    right: 0; /* so, it'll be shown at the left */
+    padding: 0.5em; /* without this, the distance between burguer and end of the viewport, is to small */
+    margin-top: 0.9em; /* distance between top and burguer */
+  }
+  .header__menu svg { /* hamburguer menu's icon */
+    width: 32px;
+    fill: #E0E0E0; /* color of hamburguer's icon */
+  }
+}
+
+@media screen and (min-width: 410px) and (max-width:610px){
+  .header__title{
+    width:70%;
+    margin: 0.2em 0.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+  }
+}
+
+@media screen and (max-width: 611px) { /* From 611px (of the viewport's width), aplly the following:  */
+  .hero {
+    order: 0; /* is showed in first place */
+  }
+
+  .weather {
+    order: 1; /* is showed in second place */
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 649px) {
+  .snippet__thumbnail {
+    width: 30%;
+    margin: 0;
+  }
+
+  .snippet__description {
+    -webkit-line-clamp: 3;
+    max-height: 3.7em;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 862px) { /* From 700px width, apply the following: */
+  .header__title{
+    padding-top: 0.15em;
+  }
+  .hero { /* puppy photo with text */
+    width: 50%; /* takes 50% width (of the viewport) */
+    order:1;
+  }
+  .newstop-news {
+    order: 3; /* is showed in first place */
+    width: 50%; /* takes 50% (of the viewport)  */
+  }
+  .scores {  /* Scores about inexistant players */
+    order: 4; /* is showed in second place */
+    width: 60%; /* take 60% of the viewport's width  */
+  }
+  .weather { /* About temperature */
+    order: 2; /* is showed in third place*/
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 850px) { /* From 850px, apply the following: */
+  main, .header__inner, .nav, .content {
+    width: 850px; /* to do not let the page's width become larger, when the viewport is more than 850px. */
+    margin-left: auto; /* adjust margin automatically in the left */
+    margin-right: auto; /* adjust margin automatically in the right */
+  }
+}
