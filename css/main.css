@@ -208,6 +208,7 @@ a {
   position: relative;
   margin-left: 0;
   margin-right: 0;
+  padding-top: 1rem;
 }
 
 .project-cover { /*image*/
