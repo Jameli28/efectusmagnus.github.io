@@ -276,9 +276,9 @@ button#play-again {
 	display: block;
 	margin: 0 auto;
 	font-family: 'Gaegu', cursive;
-	color: white;
+	color: #ffffff; /*white*/
 	border-radius: 40px;
-	border-color: gold;
+	border-color: #ffd700; /*gold*/
 	text-align: center;
 	margin-bottom: 2.5rem;
 	padding: 0.5em;
