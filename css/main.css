@@ -187,13 +187,12 @@ header {
   font-weight: 500;
   padding-left: 0.4rem;
   padding-top: 2em;
-  padding-bottom: 1em;
   text-align: left;
 }
 
 /*link*/
 a {
-  text-decoration: 	none currentcolor solid;
+  text-decoration: none currentcolor solid;
   color: grey;
 }
 
