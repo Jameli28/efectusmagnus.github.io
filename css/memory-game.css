@@ -269,7 +269,7 @@ my-button {
 /* End of close button*/
 
 /* Play again button for the modal window */
-button#play-again {
+#play-again {
 	button#play-again {
 	background-color: #24adad;
 	font-size: 1.5rem;
@@ -286,7 +286,7 @@ button#play-again {
 }
 
 
-h2#resultsTitle {
+#resultsTitle {
 	font-size: 2em;
 	color: #20b2aa; /*lightseagreen*/
 	text-align: center;
