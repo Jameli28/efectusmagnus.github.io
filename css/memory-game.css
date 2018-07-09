@@ -262,7 +262,6 @@ my-button {
 
 /* Play again button for the modal window */
 #play-again {
-	button#play-again {
 	background-color: #24adad;
 	font-size: 1.5rem;
 	display: block;
