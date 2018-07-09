@@ -293,7 +293,7 @@ h2#resultsTitle {
     margin-top: 3rem;
 }
 
-/*The animations code is from
+/*The animations code is partially from `https://www.tutorialspoint.com/css/css_animation_flip_in_y.htm`
 /* animations */
 @keyframes flipInY {
 	from {
