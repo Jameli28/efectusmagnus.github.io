@@ -259,8 +259,8 @@ my-button {
 	border-color: transparent;
 	border-radius: 40px;
 	font-size: 1.5em;
-	font-family: 'Nanum Pen Script', cursive;
 	background-color: #d3d3d3;
+	box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
 }
 
 .close-icon:hover {
