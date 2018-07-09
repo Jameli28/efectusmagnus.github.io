@@ -423,4 +423,11 @@ a {
     order: 7;
     float: left;
   }
+  .four {
+    width: 30%;
+    order: 8; /*it seems not to be really needed, but just in case, they tell the order of divs*/
+    float: left; /*enables the following div to be left*/
+    padding-right: 2%;
+    padding-left: 3%; /*distance between divs*/
+  }
 }
