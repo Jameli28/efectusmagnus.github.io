@@ -365,29 +365,32 @@ my-button {
 
 /* Media Queries */
 @media (max-width: 320px) {
-  .deck {
-	width: 85%;
-  }
-  .deck .card {
-	width: 3rem;
-	height: 3rem;
-  }
+	.deck {
+		width: 85%;
+	}
+	.deck .card {
+		width: 3rem;
+		height: 3rem;
+	}
 }
 /*For tablets and larger screens */
 @media (min-width: 768px) {
-  .container {
-	font-size: 22px;
-  }
-  .deck {
-	width: 660px;
-	height: 680px;
-  }
-  .deck .card {
-	width: 125px;
-	height: 125px;
-  }
-  .popup {
-	width: 60%;
-	margin-top: 25vh;
-  }
+	.restart { /*restart button*/
+		padding-top: 0.3rem;
+	}
+	.container {
+		font-size: 22px;
+	}
+	.deck {
+		width: 660px;
+		height: 680px;
+	}
+	.deck .card {
+		width: 125px;
+		height: 125px;
+	}
+	.popup {
+		width: 60%;
+		margin-top: 25vh;
+	}
 }
