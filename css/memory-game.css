@@ -123,11 +123,13 @@ h1 {
 	display: inline-block;
 }
 
-.score-panel, button.restart {
+.restart {
+	font-size: 1rem; /* This helps to keep the score panel aligned */
+}
+
+.score-panel, .restart {
 	float: right;
 	cursor: pointer;
-	padding-top: 0.3em;
-	font-size: 1em;
 	font-family: 'Gaegu', cursive;
 }
 
