@@ -404,6 +404,7 @@ a {
   .three {
     order: 7;
     float: left;
+    padding-left:3px;
   }
   .four {
     order: 8; /*it seems not to be really needed, but just in case, they tell the order of divs*/
