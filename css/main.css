@@ -374,6 +374,49 @@ a {
     word-wrap: break-word; /*break a word if it is larger than the div*/
     column-gap: 1.3em;/*gap between columns*/
   }
+  
+  .projects { /*div containing all projects*/
+    display: flex; /*display the flexible length on flexible items*/
+    flex-wrap: wrap; /*flex items will wrap onto multiple lines, from top to bottom. If there is no more space left, they will go below*/
+  }
+  .box { /*general box containing project-cover, cover-caption, project-name and project-link*/
+    text-align: center;
+    width: 100%;
+  }
+  .one,
+  .two,
+  .three,
+  .four,
+  .five {
+    width: 45%;
+  }
+  .one {
+    order: 5; /*it seems not to be really needed, but just in case, they tell the order of divs*/
+    float: left; /*enables the following div to be left*/
+    padding-right: 2%;
+    padding-left: 3%; /*distance between divs*/
+  }
+  .two {
+    order: 6;
+    float: left;
+    padding-right: 3%;
+  }
+  .three {
+    order: 7;
+    float: left;
+  }
+  .four {
+    order: 8; /*it seems not to be really needed, but just in case, they tell the order of divs*/
+    float: left; /*enables the following div to be left*/
+    padding-right: 2%;
+    padding-left: 3%; /*distance between divs*/
+  }
+  .five {
+    order: 9;
+    float: left; /*enables the following div to be left*/
+    padding-right: 2%;
+    padding-left: 3%; /*distance between divs*/
+  }
 }
 
 @media screen and (min-width:1025px) {
