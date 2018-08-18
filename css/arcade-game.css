@@ -306,7 +306,8 @@ button#down {
 }
 @media (min-width: 411px) {
   img#refresh-page-btn {
-    width: 4.5em;
+    width: 59px;
+    /*width: 4.5em;*/
   }
   div#restart-btn1 {
     padding-right: 0.6em;
