@@ -122,12 +122,12 @@ var startEngine = function() {
            * for that particular row of the game level.
            */
           var rowImages = [
-                  'images/water-block.png',   // Top row is water
-                  'images/stone-block.png',   // Row 1 of 3 of stone
-                  'images/stone-block.png',   // Row 2 of 3 of stone
-                  'images/stone-block.png',   // Row 3 of 3 of stone
-                  'images/grass-block.png',   // Row 1 of 2 of grass
-                  'images/grass-block.png'    // Row 2 of 2 of grass
+                  '//efectusmagnus.github.io/images/water-block.png',   // Top row is water
+                  '//efectusmagnus.github.io/images/stone-block.png',   // Row 1 of 3 of stone
+                  '//efectusmagnus.github.io/images/stone-block.png',   // Row 2 of 3 of stone
+                  '//efectusmagnus.github.io/images/stone-block.png',   // Row 3 of 3 of stone
+                  '//efectusmagnus.github.io/images/grass-block.png',   // Row 1 of 2 of grass
+                  '//efectusmagnus.github.io/images/grass-block.png'    // Row 2 of 2 of grass
               ],
               numRows = 6,
               numCols = 5,
@@ -209,26 +209,26 @@ var startEngine = function() {
        * all of these images are properly loaded our game will start.
        */
       Resources.load([
-          'images/stone-block.png',
-          'images/water-block.png',
-          'images/grass-block.png',
-          'images/enemy-bug.png',
-          'images/char-boy.png',
-          'images/char-cat-girl.png',
-          'images/char-horn-girl.png',
-          'images/char-pink-girl.png',
-          'images/char-cat-girl.png',
-          'images/char-princess-girl.png',
-          'images/heart.png',
-          "images/gem-blue.png",
-          "images/gem-green.png",
-          "images/gem-orange.png",
-          'images/drop.png',
-          'images/gem-point.png',
-          'images/stone-banner.png',
-          'images/restart-icon.png',
-          'images/game-won.png',
-          'images/game-lost.png'
+          '//efectusmagnus.github.io/images/stone-block.png',
+          '//efectusmagnus.github.io/images/water-block.png',
+          '//efectusmagnus.github.io/images/grass-block.png',
+          '//efectusmagnus.github.io/images/enemy-bug.png',
+          '//efectusmagnus.github.io/images/char-boy.png',
+          '//efectusmagnus.github.io/images/char-cat-girl.png',
+          '//efectusmagnus.github.io/images/char-horn-girl.png',
+          '//efectusmagnus.github.io/images/char-pink-girl.png',
+          '//efectusmagnus.github.io/images/char-cat-girl.png',
+          '//efectusmagnus.github.io/images/char-princess-girl.png',
+          '//efectusmagnus.github.io/images/heart.png',
+          "//efectusmagnus.github.io/images/gem-blue.png",
+          "//efectusmagnus.github.io/images/gem-green.png",
+          "//efectusmagnus.github.io/images/gem-orange.png",
+          '//efectusmagnus.github.io/images/drop.png',
+          '//efectusmagnus.github.io/images/gem-point.png',
+          '//efectusmagnus.github.io/images/stone-banner.png',
+          '//efectusmagnus.github.io/images/restart-icon.png',
+          '//efectusmagnus.github.io/images/game-won.png',
+          '//efectusmagnus.github.io/images/game-lost.png'
 
       ]);
       Resources.onReady(init);
