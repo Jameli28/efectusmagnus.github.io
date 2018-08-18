@@ -236,7 +236,8 @@ button.ctrl-btn {
 
 /*class to not zoom when doulble-clicking*/
 button.no-zoom {
-  touch-action: none;
+  touch-action: manipulation;
+  /*touch-action: none;*/
 }
 
 /*Beginn of hover colors for control buttons*/
