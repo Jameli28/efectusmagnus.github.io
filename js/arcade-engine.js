@@ -152,7 +152,7 @@ var startEngine = function() {
                   ctx.drawImage(Resources.get(rowImages[row]), col * 101, row * 83);
               }
           }
-          ctx.drawImage(Resources.get('images/stone-banner.png'), 0, -5);
+          ctx.drawImage(Resources.get('//efectusmagnus.github.io/images/stone-banner.png'), 0, -5);
 
           renderEntities();
       }
