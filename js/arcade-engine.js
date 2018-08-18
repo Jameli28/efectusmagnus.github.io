@@ -153,7 +153,7 @@ var startEngine = function() {
               }
           }
           if( /iPad/i.test(navigator.userAgent)) {
-            ctx.drawImage(Resources.get('images/stone-banner-pro.png'), 0, 0);
+            ctx.drawImage(Resources.get('//efectusmagnus.github.io/images/stone-banner-pro.png'), 0, 0);
           }
           ctx.drawImage(Resources.get('//efectusmagnus.github.io/images/stone-banner.png'), 0, -5);
 
