@@ -112,6 +112,10 @@ const startGame = function(sprite) {
       this.playing = false;
       ctx.drawImage(Resources.get('//efectusmagnus.github.io/images/game-lost.png'), 0, 0, 505, 585);
     }
+    /*This is only for ipad devices. For the reset bottom appeared behind the canvas*/
+    if( /iPad/i.test(navigator.userAgent)) {
+      ctx.drawImage(Resources.get('images/restart-icon.png'), 422, -10, 76, 60);
+    }
   };
 
   //Handle input for when keyborard is pressed. Defining player bounderies
