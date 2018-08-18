@@ -114,7 +114,7 @@ const startGame = function(sprite) {
     }
     /*This is only for ipad devices. For the reset bottom appeared behind the canvas*/
     if( /iPad/i.test(navigator.userAgent)) {
-      ctx.drawImage(Resources.get('images/restart-icon.png'), 422, -10, 76, 60);
+      ctx.drawImage(Resources.get('//efectusmagnus.github.io/images/restart-icon.png'), 422, -10, 76, 60);
     }
   };
 
