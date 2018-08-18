@@ -5,7 +5,7 @@ let allGems;
 let score = 0;
 
 const enemySpeed = [2, 2.1, 3, 3.5, 4, 4.5/*, 5, 5.5, 6, 6.5, 7*/];
-const gemSprites = ['images/gem-blue.png', 'images/gem-orange.png', 'images/gem-green.png'];
+const gemSprites = ['//efectusmagnus.github.io/images/gem-blue.png', '//efectusmagnus.github.io/images/gem-orange.png', '//efectusmagnus.github.io/images/gem-green.png'];
 const gemPosX = [13, 114, 216, 316, 417];
 const gemPosY = [132, 216, 300]; //119, 200, 285
 const tileWidth = 101;
@@ -17,7 +17,7 @@ const bugSizeY = 60;
 const startGame = function(sprite) {
   // Enemies our player must avoid
   const Enemy = function(y) {
-      this.sprite = 'images/enemy-bug.png'; //loads enemy's image
+      this.sprite = '//efectusmagnus.github.io/images/enemy-bug.png'; //loads enemy's image
       this.x = -tileWidth; //-101: beginns outside the game board
       this.y = y; //Described below: 55, 140, 224
       this.width = 100;
@@ -104,13 +104,13 @@ const startGame = function(sprite) {
     if ((this.gemScore === 20) || (this.waterScore === 20) || (this.gemScore + this.waterScore === 20)) {
       this.reset();/*this refers to player :)*/
       this.playing = false;
-      ctx.drawImage(Resources.get('images/game-won.png'), 0, 0, 505, 585);
+      ctx.drawImage(Resources.get('//efectusmagnus.github.io/images/game-won.png'), 0, 0, 505, 585);
     }
     //If there are no lifes left
     if(player.life <= 0) {
       this.reset();
       this.playing = false;
-      ctx.drawImage(Resources.get('images/game-lost.png'), 0, 0, 505, 585);
+      ctx.drawImage(Resources.get('//efectusmagnus.github.io/images/game-lost.png'), 0, 0, 505, 585);
     }
   };
 
@@ -156,7 +156,7 @@ const startGame = function(sprite) {
 
   //variables for the hearts
   let Heart = function(x) {
-    this.sprite = 'images/heart.png';
+    this.sprite = '//efectusmagnus.github.io/images/heart.png';
     this.x = x;
     this.y = 6;
     //Size of hearts
@@ -173,7 +173,7 @@ const startGame = function(sprite) {
   };
 
   let Water = function(x, waterScore) {
-    this.sprite = 'images/drop.png';
+    this.sprite = '//efectusmagnus.github.io/images/drop.png';
     this.x = x;
     this.y = 5;
     //Size of hearts
@@ -195,7 +195,7 @@ const startGame = function(sprite) {
 
   // Varia for gem score
   let GemScore = function(x) {
-    this.sprite = 'images/gem-point.png';
+    this.sprite = '//efectusmagnus.github.io/images/gem-point.png';
     this.x = x;
     this.y = 8;
     //Size of hearts
