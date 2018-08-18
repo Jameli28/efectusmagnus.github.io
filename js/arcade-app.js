@@ -100,6 +100,11 @@ const startGame = function(sprite) {
   //Render the player on the screen
   Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y, this.width, this.height);
+    /*This is for ipad devices. For the reset bottom appeared behind the canvas*/
+    if( /iPad/i.test(navigator.userAgent)) {
+      ctx.drawImage(Resources.get('images/restart-icon.png'), 421, -14, 78, 65);
+      /*ctx.drawImage(Resources.get('images/restart-icon.png'), 422, 30, 76, 60);*/
+    }
     //if the players wins
     if ((this.gemScore === 20) || (this.waterScore === 20) || (this.gemScore + this.waterScore === 20)) {
       this.reset();/*this refers to player :)*/
@@ -111,10 +116,6 @@ const startGame = function(sprite) {
       this.reset();
       this.playing = false;
       ctx.drawImage(Resources.get('//efectusmagnus.github.io/images/game-lost.png'), 0, 0, 505, 585);
-    }
-    /*This is only for ipad devices. For the reset bottom appeared behind the canvas*/
-    if( /iPad/i.test(navigator.userAgent)) {
-      ctx.drawImage(Resources.get('//efectusmagnus.github.io/images/restart-icon.png'), 422, -10, 76, 60);
     }
   };
 
