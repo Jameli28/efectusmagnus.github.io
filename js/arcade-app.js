@@ -102,7 +102,7 @@ const startGame = function(sprite) {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y, this.width, this.height);
     /*This is for ipad devices. For the reset bottom appeared behind the canvas*/
     if( /iPad/i.test(navigator.userAgent)) {
-      ctx.drawImage(Resources.get('//efectusmagnus.github.io/images/restart-icon.png'), 421, -14, 78, 65);
+      ctx.drawImage(Resources.get('//efectusmagnus.github.io/images/restart-icon.png'), 419, -14, 78, 65);
       /*ctx.drawImage(Resources.get('images/restart-icon.png'), 422, 30, 76, 60);*/
     }
     //if the players wins
