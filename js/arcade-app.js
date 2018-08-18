@@ -303,16 +303,6 @@ var randomSpeed = function random(array) {
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     document.querySelector('#btn-panel').style.display = "block";
   }
-  /*How to avoid zooming when double-clicking*/
-  /*Code from: https://medium.com/building-blocks/code-snippet-4accfa29b75d*/
-  var doubleTouchStartTimestamp = 0;
-  document.addEventListener("touchstart", function(event){
-    var now = +(new Date());
-    if (doubleTouchStartTimestamp + 500 > now){
-        event.preventDefault();
-    };
-    doubleTouchStartTimestamp = now;
-  });
 };
 
 /*Code from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup*/
