@@ -231,7 +231,8 @@ var startEngine = function() {
           '//efectusmagnus.github.io/images/stone-banner.png',
           '//efectusmagnus.github.io/images/restart-icon.png',
           '//efectusmagnus.github.io/images/game-won.png',
-          '//efectusmagnus.github.io/images/game-lost.png'
+          '//efectusmagnus.github.io/images/game-lost.png',
+          'images/stone-banner-pro.png'
 
       ]);
       Resources.onReady(init);
