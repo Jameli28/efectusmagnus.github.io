@@ -233,6 +233,12 @@ button.ctrl-btn {
     width: 5em;
     /*color: #696969;*/
 }
+
+/*class to not zoom when doulble-clicking*/
+button.no-zoom {
+  touch-action: none;
+}
+
 /*Beginn of hover colors for control buttons*/
 button#up:hover {
   background: linear-gradient(0deg, #673AB7, #4CAF50);
