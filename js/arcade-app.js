@@ -306,7 +306,7 @@ var randomSpeed = function random(array) {
   /*How to avoid zooming when double-clicking*/
   /*Code from: https://medium.com/building-blocks/code-snippet-4accfa29b75d*/
   var doubleTouchStartTimestamp = 0;
-  document.addEventListener("onclick", function(event){
+  document.addEventListener("touchstart", function(event){
     var now = +(new Date());
     if (doubleTouchStartTimestamp + 500 > now){
         event.preventDefault();
