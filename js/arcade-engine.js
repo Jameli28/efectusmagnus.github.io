@@ -152,9 +152,6 @@ var startEngine = function() {
                   ctx.drawImage(Resources.get(rowImages[row]), col * 101, row * 83);
               }
           }
-          if( /iPad/i.test(navigator.userAgent)) {
-            ctx.drawImage(Resources.get('//efectusmagnus.github.io/images/stone-banner-pro.png'), 0, 0);
-          }
           ctx.drawImage(Resources.get('//efectusmagnus.github.io/images/stone-banner.png'), 0, -5);
 
           renderEntities();
@@ -232,8 +229,7 @@ var startEngine = function() {
           '//efectusmagnus.github.io/images/restart-icon.png',
           '//efectusmagnus.github.io/images/game-won.png',
           '//efectusmagnus.github.io/images/game-lost.png',
-          'images/stone-banner-pro.png'
-
+ 
       ]);
       Resources.onReady(init);
 
