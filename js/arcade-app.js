@@ -2,6 +2,7 @@ let allEnemies;
 let player;
 let allWater;
 let allGems;
+let allGemScores;
 
 const enemySpeed = [2, 2.1, 3, 3.5, 4, 4.5/*, 5, 5.5, 6, 6.5, 7*/];
 const gemSprites = [
