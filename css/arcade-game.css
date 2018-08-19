@@ -328,6 +328,7 @@ button#down {
 @media (min-width: 768px) {
   button.ctrl-btn {
     width: 9em;
+    height: 4.5em;
   }
   img.details {
     margin-left: 1.8em;
