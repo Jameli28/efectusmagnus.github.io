@@ -224,7 +224,7 @@ div#btn-panel {
   align-items: flex-start;
   text-transform: none;
   box-sizing: inherit;
-  width: 15em;
+  /*width: 15em;*/
   text-rendering: auto;
 }
 
