@@ -324,8 +324,11 @@ button#down {
     margin-top: 11.3em;
   }
 }
-/* Media query for intruction button */
+/* Media query for intruction and control buttons */
 @media (min-width: 768px) {
+  button.ctrl-btn {
+    width: 9em;
+  }
   img.details {
     margin-left: 1.8em;
   }
