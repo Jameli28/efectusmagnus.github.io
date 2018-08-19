@@ -38,6 +38,8 @@ const startGame = function(sprite) {
         this.x += bugSizeX * this.speed * dt; // 85 for bugSizeY
       } else { //Make the bug reappear on the left side again
         this.x = -tileWidth; // Negative, to make the illusion of coming from the left
+        /* Random the speed offscreen */
+        this.speed = enemySpeed[Math.floor(Math.random() * enemySpeed.length)];
       }
       'use strict';
       const spaceBox = 60;/*In a scale from 0 to 100, 0: the bug goes through
