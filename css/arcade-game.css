@@ -321,7 +321,7 @@ button#down {
 }
 @media (min-width: 768px) {
   html {
-    margin-top: 6.9em;
+    margin-top: 6.9em 0;
   }
   /* intruction and control buttons */
   button.ctrl-btn {
