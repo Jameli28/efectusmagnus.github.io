@@ -86,7 +86,7 @@ button.popup:focus {
 .popup .popuptext {
     visibility: hidden;
     width: 260px;
-    height: 300px;
+    height: auto;
     background-color: #555;
     color: #fff;
     text-align: center;
