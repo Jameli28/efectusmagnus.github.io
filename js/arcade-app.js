@@ -2,10 +2,13 @@ let allEnemies;
 let player;
 let allWater;
 let allGems;
-let score = 0;
 
 const enemySpeed = [2, 2.1, 3, 3.5, 4, 4.5/*, 5, 5.5, 6, 6.5, 7*/];
-const gemSprites = ['//efectusmagnus.github.io/images/gem-blue.png', '//efectusmagnus.github.io/images/gem-orange.png', '//efectusmagnus.github.io/images/gem-green.png'];
+const gemSprites = [
+  '//efectusmagnus.github.io/images/gem-blue.png', 
+  '//efectusmagnus.github.io/images/gem-orange.png', 
+  '//efectusmagnus.github.io/images/gem-green.png'
+];
 const gemPosX = [13, 114, 216, 316, 417];
 const gemPosY = [132, 216, 300]; //119, 200, 285
 const tileWidth = 101;
@@ -74,14 +77,11 @@ const startGame = function(sprite) {
     this.height = 170;
     this.dx = 0;
     this.dy = 0;
-    //this.collision = false;
     this.waterScore = 0;
     this.gemScore = 0;
     this.totalScore = this.waterScore + this.gemScore;
     this.life = 3;
     this.playing = true;
-    //this.won = false;
-    //this.lost = false;
   };
   //Update the players position
   Player.prototype.update = function(dt) {
@@ -93,7 +93,7 @@ const startGame = function(sprite) {
     'use strict'
     const box = 20;//60
     //If the player doesn't touch the bug
-    if (player.y < box) { // and reaches the river,
+    if (this.y < box) { // and reaches the river,
       this.waterScore += 1; // give the player a point (augment the water score)
       this.reset(); //resets the player (returns the player to startpoint)
     }
@@ -105,7 +105,6 @@ const startGame = function(sprite) {
     /*This is for ipad devices. For the reset bottom appeared behind the canvas*/
     if( /iPad/i.test(navigator.userAgent)) {
       ctx.drawImage(Resources.get('//efectusmagnus.github.io/images/restart-icon.png'), 413, -14, 78, 65);
-      /*ctx.drawImage(Resources.get('images/restart-icon.png'), 422, 30, 76, 60);*/
     }
     //if the players wins
     if ((this.gemScore === 20) || (this.waterScore === 20) || (this.gemScore + this.waterScore === 20)) {
@@ -153,7 +152,7 @@ const startGame = function(sprite) {
     }
     this.update();
   };
-
+  //Resets player to startpoint
   Player.prototype.reset = function() {
     this.x = 1 + 100 * 2; // 1 + 100 * 2 = 202
     this.y = 60 + 85 * 4; // 60 + 85 * 4 = 400
@@ -252,11 +251,6 @@ const startGame = function(sprite) {
   Gem.prototype.render = function(player) {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y, this.width, this.height);
   }
-/*
-var randomSpeed = function random(array) {
-  return array[Math.floor(Math.random() * array.length)];
-}
-*/
 
   // Now instantiate your objects.
   allGemScores = [new GemScore(260)];
@@ -295,7 +289,6 @@ var randomSpeed = function random(array) {
   }
 
   createPlayer(sprite);
-  //createGem(allGems);
   startEngine(); // This function is on the `engine.js` file
   //don't show the game board (until the player is selected)
   document.querySelector('#pickup-player').style.display = "none";
