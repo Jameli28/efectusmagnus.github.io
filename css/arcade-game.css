@@ -315,7 +315,7 @@ button#down {
   }
 }
 @media (min-width: 768px) {
-  main {
+  html {
     position: relative;
     float: left;
     top: 50%;
