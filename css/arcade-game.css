@@ -307,11 +307,7 @@ button#down {
 }
 @media (min-width: 768px) {
   html {
-    position: relative;
-    float: left;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
+    margin: 6em 0;
   }
   div#restart-btn1 {
     padding-right: 0.35em;
