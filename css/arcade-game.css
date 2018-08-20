@@ -1,23 +1,17 @@
 html {
-  /*background-color: black;*/
-  /*background: linear-gradient(180deg, #040404, #ffffff);*/
   /*Source of background image: https://freedesignfile.com/195803-red-brick-wall-backgrounds-vectors-02/*/
   background-image: url('../images/brick-wall.png');
   min-height: 320px;
-  background-repeat: round;
-  /*background-repeat: repeat;*/
-  /*height: -webkit-fill-available;*/
-      padding-bottom: 0.5em;
+  background-repeat: repeat;
+  padding-bottom: 0.5em;
 }
 
 *:before, *:after {
   box-sizing: inherit;
 }
 body {
-    text-align: center;
-    /*background: linear-gradient(180deg, #d5cabe, #71717f);
-    height: -webkit-fill-available;*/
-    padding-bottom: 0.5em;
+  text-align: center;
+  padding-bottom: 0.5em;
 }
 
 main {
@@ -31,12 +25,12 @@ main {
 }
 
 img.details {
-    background: linear-gradient(0deg, #FFEB3B, #4CAF50);
-    border-color: azure;
-    border-radius: 80px;
-    margin-top: 3em;
-    width: 6em;
-    margin-left: 0.1em;
+  background: linear-gradient(0deg, #FFEB3B, #4CAF50);
+  border-color: azure;
+  border-radius: 80px;
+  margin-top: 3em;
+  width: 6em;
+  margin-left: 0.1em;
 }
 
 img.details:hover {
@@ -63,11 +57,11 @@ button.popup:hover {
 }
 /*Focus around the popup*/
 button.popup:focus {
-    /*outline: none;*/
-    /*outline: -webkit-focus-ring-color auto 5px;*/
-    outline: none !important;
-    border-color: #719ECE;
-    box-shadow: 0 0 10px #719ECE
+  /*outline: none;*/
+  /*outline: -webkit-focus-ring-color auto 5px;*/
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE
 }
 
 /*Popup. Adapted from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup */
@@ -111,50 +105,50 @@ button.popup:focus {
 
 /* Popup arrow */
 .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: 8em;/*-50px, 34px*/
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
+   content: "";
+   position: absolute;
+   top: 100%;
+   left: 50%;
+   margin-left: 8em;/*-50px, 34px*/
+   border-width: 5px;
+   border-style: solid;
+   border-color: #555 transparent transparent transparent;
 }
 
 /* Toggle this class - hide and show the popup */
 .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
+   visibility: visible;
+   -webkit-animation: fadeIn 1s;
+   animation: fadeIn 1s;
 }
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
 
 /* Toggle this class - hide and show the popup */
 .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
 /*End of popup*/
 
@@ -210,11 +204,11 @@ img#refresh-page-btn {
 /*End of restart button*/
 
 div#my-circle {
-    background-color: black;
-    border-radius: 1000px;
-    padding-bottom: 0.5em;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+  background-color: black;
+  border-radius: 1000px;
+  padding-bottom: 0.5em;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 /*Control buttons*/
@@ -229,9 +223,9 @@ div#btn-panel {
 }
 
 button.ctrl-btn {
-    height: 3.7em;
-    width: 6.6em;
-    /*color: #696969;*/
+  height: 3.7em;
+  width: 6.6em;
+  /*color: #696969;*/
 }
 
 /*class to not zoom when doulble-clicking*/
@@ -259,37 +253,34 @@ button#up, button#left, button#right, button#down {
   border-style: groove;
 }
 button#up {
-    /*float: none;*/
-    margin-bottom: 0.5em;
-    margin-left: 0.4em;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    background: linear-gradient(0deg, #646b65, #ffffff);
+  margin-bottom: 0.5em;
+  margin-left: 0.4em;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background: linear-gradient(0deg, #646b65, #ffffff);
 }
 
 button#left{
-    /*float: left;*/
-    margin-right: 0.5em;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 1px;
-    border-bottom-right-radius: 1px;
-    background: linear-gradient(-90deg, #6d776a, #fdfeff);
+  margin-right: 0.5em;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  background: linear-gradient(-90deg, #6d776a, #fdfeff);
 }
 
 button#right {
-    /*float: right;*/
-    border-top-left-radius: 1px;
-    border-bottom-left-radius: 1px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    background: linear-gradient(-90deg, #fdfeff, #657162);
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background: linear-gradient(-90deg, #fdfeff, #657162);
 
 }
 button#down {
-    margin-right: 0.5em;
-    border-radius: 5px;
-    background: linear-gradient(180deg, #51524a, #fffefe);
+  margin-right: 0.5em;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #51524a, #fffefe);
 }
 
 /*End of control buttons*/
