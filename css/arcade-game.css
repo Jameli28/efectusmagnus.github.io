@@ -320,7 +320,7 @@ button#down {
     float: left;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
   }
   div#restart-btn1 {
     padding-right: 0.35em;
