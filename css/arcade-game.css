@@ -297,24 +297,19 @@ button#down {
 /*`Media Queries`*/
 @media (min-width: 321px) {
   img#refresh-page-btn {
-    width: 4em;
+    width: 4.1em;
   }
 }
-@media (min-width: 360px) {
+/*@media (min-width: 360px) {
   div#restart-btn1 {
     padding-right: 0.4em;
   }
-}
+}*/
 @media (min-width: 411px) {
   img#refresh-page-btn {
     width: 59px;
     /*width: 4.5em;*/
   }
-  div#restart-btn1 {
-    padding-right: 0.6em;
-  }
-}
-@media (min-width: 768px) {
   div#restart-btn1 {
     padding-right: 0.4em;
   }
@@ -322,6 +317,12 @@ button#down {
 @media (min-width: 768px) {
   html {
     margin: 6.9em 0;
+  }
+  div#restart-btn1 {
+    padding-right: 0.35em;
+  }
+  img#refresh-page-btn {
+    width: 61px;
   }
   /* intruction and control buttons */
   button.ctrl-btn {
