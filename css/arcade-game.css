@@ -42,10 +42,8 @@ button.popup {
   background: linear-gradient(0deg, #FFEB3B, #4CAF50);
   border-radius: 50px;
   margin: 6em 0.2em 0 0;/* top, right, bottom, left*/
-  /*margin: 3.5em 0.2em 0 0;*/ /* top, right, bottom, left*/
   padding: 2em 1em;
-  /*padding: 6em 1em 3.1em 1.4em;*/ /* top, right, bottom, left*/
-  width: 7em; /*7em*/
+  width: 7em;
   position: sticky;
   float: right;
   display: inline-block;
@@ -57,8 +55,6 @@ button.popup:hover {
 }
 /*Focus around the popup*/
 button.popup:focus {
-  /*outline: none;*/
-  /*outline: -webkit-focus-ring-color auto 5px;*/
   outline: none !important;
   border-color: #719ECE;
   box-shadow: 0 0 10px #719ECE
@@ -218,20 +214,17 @@ div#btn-panel {
   align-items: flex-start;
   text-transform: none;
   box-sizing: inherit;
-  /*width: 15em;*/
   text-rendering: auto;
 }
 
 button.ctrl-btn {
   height: 3.7em;
   width: 6.6em;
-  /*color: #696969;*/
 }
 
 /*class to not zoom when doulble-clicking*/
 button.no-zoom {
   touch-action: manipulation;
-  /*touch-action: none;*/
 }
 
 /*Beginn of hover colors for control buttons*/
@@ -291,15 +284,9 @@ button#down {
     width: 4.1em;
   }
 }
-/*@media (min-width: 360px) {
-  div#restart-btn1 {
-    padding-right: 0.4em;
-  }
-}*/
 @media (min-width: 411px) {
   img#refresh-page-btn {
     width: 59px;
-    /*width: 4.5em;*/
   }
   div#restart-btn1 {
     padding-right: 0.4em;
