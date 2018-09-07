@@ -1,9 +1,6 @@
-# efectusmagnus.github.io
-#Introduction
+# My portfolio with projects and exercices
 
 That is my portfolio presentatation for my second Udacity project. The portfolio contains all the projects to come. 
-
-#Project Portfolio
 
 ##Project Requirements 
 
