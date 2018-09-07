@@ -1,7 +1,7 @@
 # efectusmagnus.github.io
 #Introduction
 
-That is my portfolio presentatation for my second Udacity project. 
+That is my portfolio presentatation for my second Udacity project. The portfolio contains all the projects to come. 
 
 #Project Portfolio
 
