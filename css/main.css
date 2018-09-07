@@ -347,9 +347,6 @@ a {
   .project-name {
     font-size: 1.8em;
   }
-  .project-link {
-    font-size: 1.6em;
-  }
 }
 
 @media screen and (min-width:0px) and (max-width: 699px) {
