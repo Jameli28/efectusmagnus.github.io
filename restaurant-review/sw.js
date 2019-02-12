@@ -12,26 +12,26 @@ self.addEventListener('install', event => {
     caches.open(staticCacheName)
       .then(cache => {
         return cache.addAll([
-          '/',
-          '/index.html',
-          '/css/styles.css',
-          '/js/dbhelper.js',
-          '/js/main.js',
-          '/js/restaurant_info.js',
-          '/restaurant.html?id=1',
-          '/restaurant.html?id=2',
-          '/restaurant.html?id=3',
-          '/restaurant.html?id=4',
-          '/restaurant.html?id=5',
-          '/restaurant.html?id=6',
-          '/restaurant.html?id=7',
-          '/restaurant.html?id=8',
-          '/restaurant.html?id=9',
-          '/restaurant.html?id=10',
-          '/data/manifest.json',
-          '/img/Efectusmagnus-white-192.png',
-          '/img/Efectusmagnus-white-512.png',
-          '/img/owl-offline.png'
+          '/restaurant-review',
+          '/restaurant-review/index.html',
+          '/restaurant-review/css/styles.css',
+          '/restaurant-review/js/dbhelper.js',
+          '/restaurant-review/js/main.js',
+          '/restaurant-review/js/restaurant_info.js',
+          '/restaurant-review/restaurant.html?id=1',
+          '/restaurant-review/restaurant.html?id=2',
+          '/restaurant-review/restaurant.html?id=3',
+          '/restaurant-review/restaurant.html?id=4',
+          '/restaurant-review/restaurant.html?id=5',
+          '/restaurant-review/restaurant.html?id=6',
+          '/restaurant-review/restaurant.html?id=7',
+          '/restaurant-review/restaurant.html?id=8',
+          '/restaurant-review/restaurant.html?id=9',
+          '/restaurant-review/restaurant.html?id=10',
+          '/restaurant-review/data/manifest.json',
+          '/restaurant-review/img/Efectusmagnus-white-192.png',
+          '/restaurant-review/img/Efectusmagnus-white-512.png',
+          '/restaurant-review/img/owl-offline.png'
         ]).catch(error => {
           console.log('Caches open failed :( ' + error);
         });
@@ -53,7 +53,7 @@ self.addEventListener('fetch', event => {
     }).catch(error => {
       //if can not fetch image, return owl image saying it's offline
       if (event.request.url.includes('.jpg')) {
-        return caches.match('/img/owl-offline.png');
+        return caches.match('/restaurant-review/img/owl-offline.png');
       }
       return new Response('Not connected to the internet :(', {
         status: 404,
