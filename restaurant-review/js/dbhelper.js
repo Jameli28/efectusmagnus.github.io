@@ -144,14 +144,14 @@ class DBHelper {
    * Restaurant page URL.
    */
   static urlForRestaurant(restaurant) {
-    return (`/restaurant-review/restaurant.html?id=${restaurant.id}`);
+    return (`https://efectusmagnus.github.io/restaurant-review/restaurant.html?id=${restaurant.id}`);
   }
 
   /**
    * Restaurant image URL.
    */
   static imageUrlForRestaurant(restaurant) {
-    return (`/restaurant-review//img/${restaurant.photograph}`);
+    return (`https://efectusmagnus.github.io/restaurant-review/img/${restaurant.photograph}`);
   }
 
   /**
