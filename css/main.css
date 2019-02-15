@@ -151,7 +151,9 @@ a {
   text-decoration: none currentcolor solid;
   color: orange;
 }
-
+.about-me {
+  margin: 5vh 0 5vh 0;
+}
 /*-- On smaller screens, decrease text size --*/
 
 @media only screen and (min-width: 0) and (max-width: 640px){
@@ -288,7 +290,6 @@ header {
   font-size: 1.5em;
   text-align: center;
   align-items: center;
-  margin: 5vh 0 5vh 0;
   background-color: transparent;
   border-radius: 5px 5px;
   border: solid 0.5px #7d97ad;
@@ -306,8 +307,8 @@ header {
 /*Div with text introduction within the button*/
 #text-box, .intro-text { /*the #text-box is for the --JavaScript function.*/
   background-color: #dfe8ef;
-  margin-top: 3vh;
   border-radius: 5px;
+  padding: 10vh 5vw 5vh 5vw;
 }
 
 /*text inside the show/hide button*/
@@ -373,9 +374,6 @@ a {
   .header-subtitle {
      font-size: 1em;
      margin-bottom: 0; /*puts the text-line closer to the subtitle*/
-  }
-  #text-box, .intro-text {
-    margin-top: 2.99em; /*Align the text box with the button*/
   }
 }
 
