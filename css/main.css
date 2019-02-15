@@ -141,6 +141,14 @@ body {
   width: 100%;
   padding: 0.5em;
 }
+.project-name:hover,
+.project-link:hover,
+.show-hide:hover {
+  background-color: #7d97ad;
+  padding: 0.1em;
+  color: white;
+  cursor: pointer;
+}
 .project-name {
   font-family: 'Nanum Pen Script', cursive;
   font-size: 1.3em;
