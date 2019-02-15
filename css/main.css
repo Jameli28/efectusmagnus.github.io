@@ -288,7 +288,11 @@ header {
   font-family: 'Nanum Pen Script', cursive; /*Another Google Font*/
 }
 /*ends of owl svg code*/
-
+.show-hide:hover {
+  background-color: #7d97ad;
+  color: white;
+  cursor: pointer;
+}
 /*button*/
 .show-hide {
   font-family: "Nanum Pen Script", cursive;
