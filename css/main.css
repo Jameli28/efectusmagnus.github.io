@@ -196,22 +196,13 @@ a {
   margin: auto;
 }*/
 
-header, footer, section, main, div {
-  display: block;
-}
-/*all the content is there, including header*/
-.site-container {
-  float: none;
-  /*border: 1px solid #969392;*/
-  box-shadow: 5px 5px 20px #ccc;
-}
-
 header {
   width: 93%; /*so that it matches the vertical alignment of the content*/
   margin-left: auto; /*with both margins, the content is centered*/
   margin-right: auto;
   padding-left: 0.6rem;
   padding-right: 0.6rem;
+  padding-bottom: 2vh;
 }
 /*Udacity's logo*/
 .header-logo {
@@ -242,22 +233,6 @@ header {
   fill: #7d97ad; /*this is the same as color, but for xml*/
 }
 
-.site-container {
-  float:none; /*nothing will float/be placed left*/
-  margin-left: auto; /*with both margins, the content is centered*/
-  margin-right: auto;
-  max-width: 1130px;
-  padding:0;
-  border: 1px solid #969392;
-  box-shadow: 5px 5px 20px #ccc;
-}
-
-.site-content {
-  box-sizing: border-box;
-  width: 97%; /*so that the main tag takes the whole space*/
-  margin-left:auto; /*with both margins, the content is centered*/
-  margin-right: auto;
-}
 /*div of the owl image*/
 .cover-intro {
   padding-bottom: 0;
@@ -518,10 +493,6 @@ a {
 }
 
 @media screen and (min-width:1025px) {
-  .site-container {
-    margin-top: 5em;
-    margin-bottom: 5em;
-  }
   .intro-text {
     padding-top: 1.5em;
     -webkit-column-count: 3; /* Chrome, Safari, Opera. Makes 3 columns */
