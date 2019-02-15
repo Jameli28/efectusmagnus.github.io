@@ -286,15 +286,14 @@ header {
   font-size: 1.5em;
   text-align: center;
   align-items: center;
-  margin-top: 1.45em;
+  margin: 5vh 0 5vh 0;
   background-color: transparent;
   border-radius: 5px 5px;
-  border: solid 0.5px grey; /***this was not accepted by the css validator: #607d8b36. But it looks nice on Chrome.***/
+  border: solid 0.5px grey;
   width: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 0 5% 0 5%;
   float: right;
-  cursor: pointer; /*a hand appears, when the mouse is over the button*/
+  cursor: pointer;
 }
 
 /*Div with text introduction*/
@@ -304,13 +303,8 @@ header {
 
 /*Div with text introduction within the button*/
 #text-box, .intro-text { /*the #text-box is for the --JavaScript function.*/
-  padding-left: 0.3em;
-  padding-left: 0.3em;
-  padding-right: 0.3em;
-  padding-top: 2em;
-  padding-bottom: 2%; /*a little padding gives more space to the text and makes the hyphenization more natural*/
   background-color: #dfe8ef;
-  margin-top: 2.9em;
+  margin-top: 3vh;
   border-radius: 5px;
 }
 
@@ -320,7 +314,6 @@ header {
   line-height: 1.25em;
   text-align: justify;
   text-indent: 1.5em; /*space before starting a paragraph*/
-  padding-top: 1em;
   font-family: 'Nanum Pen Script', cursive;
 }
 
