@@ -109,6 +109,11 @@ body {
 /*-- Featured Work --*/
 .middle-title {
   color: #7d97ad;
+  font-family:'Nanum Pen Script', cursive;
+  font-size: 1.5em;
+  padding-left: 1vw;
+  text-align: center;
+  text-decoration: underline;
 }
 .featured-work {
   margin: 0;
