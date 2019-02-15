@@ -348,6 +348,7 @@ header {
 
 .paragraf {
   margin-top: 0; /*the text is more to the top like this*/
+  font-size: 1em;
 }
 
 /*h2 Featured Work*/
@@ -469,10 +470,6 @@ footer {
   }
   .header-subtitle {
     font-size: 1.6em;
-  }
-
-  #text-box,.show-hide, .intro-text {
-    font-size: 2em;
   }
   .secondary-title {
     font-size: 2.9em;
