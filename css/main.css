@@ -205,13 +205,6 @@ a {
 }
 /*-- End of new content --*/
 
-/*body, html {
-  font-family: "Work Sans", sans-serif;
-  width: 100%;
-  min-height: 100%;
-  max-width: 1330px;
-  margin: auto;
-}*/
 
 header {
   width: 93%; /*so that it matches the vertical alignment of the content*/
@@ -372,7 +365,10 @@ a {
   text-decoration: none currentcolor solid;
   color: grey;
 }
-
+footer {
+  color: black;
+  text-align: center;
+}
 /*Responsive*/
 @media screen and (max-width: 320px) {
   .header-logo {
