@@ -18,6 +18,7 @@ body {
   position: relative;
   margin: auto;
   border: 1px solid #7d97ad;
+  border-radius: 5px 5px;
 }
 
 .my-slides {
@@ -123,11 +124,12 @@ body {
   grid-gap: 0.3em;
 }
 .project-list {
-  border: 1px solid #ccc;
+  border: 1px solid #7d97ad;
   margin: 0;
   text-align: center;
   line-height: 1em;
   text-decoration: none;
+  border-radius: 5px 5px;
 }
 .project-img {
   max-width: 400px;
@@ -289,7 +291,7 @@ header {
   margin: 5vh 0 5vh 0;
   background-color: transparent;
   border-radius: 5px 5px;
-  border: solid 0.5px grey;
+  border: solid 0.5px #7d97ad;
   width: 100%;
   padding: 0 5% 0 5%;
   float: right;
