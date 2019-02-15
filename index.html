@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet"><!--Font family "Work Sans" from Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css"><!--My layout-->
-    <script src="js/portfolio-animation.js"></script><!--JavaScript for the button-->
   </head>
   <body>
     <div class="site-container">
@@ -30,7 +29,14 @@
 
       <div class="site-content">
         <main><!-- Here beginns the page's main content -->
-         
+          <section>
+            <div class="slideshow-ctn"></div>
+           </section>
+           <section class="featured-work">
+             <h3 class="middle-title">Featured Work</h3>
+             <ul class="project-ctn" role="region" aria-label="Projects' list."></ul>
+           </section>
+
             <!--main image: owl-->
             <section class="cover-intro">
               <svg class="img project-main-cover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 221.4 94" aria-label="owl"><!--aria-labelledby is for screen readers -->
@@ -52,76 +58,10 @@
                 <p class="paragraf">I hope one day to be able to communicate with a machine through my mind, with some&shy;thing like a mind headset (:3)</p>
               </div>
             </section>
-         
-          <!--Beginning of projects-->
-          <h2 class="secondary-title">Featured Work</h2>
-          <!--here are the covers-->
-          <section class="projects">
-          <!--image 1: dalmatian-->
-            <div class="box one">
-              <a href="https://efectusmagnus.github.io/html/animal-card.html">
-                <img class="project-cover" src="images/dalmatian.png" alt="a dalmatian dog">
-              </a>
-              <div class="cover-caption"><!--box containing h3 and link-->
-                <a href="https://efectusmagnus.github.io/html/animal-card.html">
-                  <h3 class="project-name">DALMATIAN</h3>
-                </a>
-                <a href="https://efectusmagnus.github.io/html/animal-card.html" class="project-link">https://efectusmagnus.github.io/html/animal-card.html</a>
-              </div>
-            </div>
 
-          <!--image 2: town's news-->
-            <div class="box two">
-              <a href="https://efectusmagnus.github.io/html/towns-news.html">
-                <img class="project-cover" src="images/town.png" alt="a picture of a town in pop style">
-              </a>
-              <div class="cover-caption"><!--box containing h3 and link-->
-                <a href="https://efectusmagnus.github.io/html/towns-news.html">
-                  <h3 class="project-name">TOWN'S NEWS</h3>
-                </a>
-                <a href="https://efectusmagnus.github.io/html/towns-news.html" class="project-link">https://efectusmagnus.github.io/html/towns-news.html</a>
-              </div>
-            </div>
-          <!--image 3: pixel art maker-->
-            <div class="box three">
-              <a href="https://efectusmagnus.github.io/html/pixel-art-maker.html">
-                <img src="images/mario-pixeled.png" class="project-cover" alt="a picture of Mario in pixel form">
-              </a>
-              <div class="cover-caption"><!--box containing h3 and link-->
-                <a href="https://efectusmagnus.github.io/html/pixel-art-maker">
-                <h3 class="project-name">PIXEL ART MAKER</h3>
-                </a>
-                <a href="https://efectusmagnus.github.io/html/pixel-art-maker.html" class="project-link">https://efectusmagnus.github.io/html/pixel-art-maker.html</a>
-              </div>
-            </div>
-            <!--image 4: memory game-->
-            <div class="box four">
-              <a href="https://efectusmagnus.github.io/html/memory-game.html">
-                <img class="project-cover" src="images/brain-game.png" alt="an icon of a brain">
-              </a>
-              <div class="cover-caption"><!--box containing h3 and link-->
-                <a href="https://efectusmagnus.github.io/html/memory-game.html">
-                  <h3 class="project-name">MEMORY GAME</h3>
-                </a>
-                <a href="https://efectusmagnus.github.io/html/memory-game.html" class="project-link">https://efectusmagnus.github.io/html/memory-game.html</a>
-              </div>
-            </div>
-            <!--image 5: arcade game -->
-            <div class="box five">
-              <a href="https://efectusmagnus.github.io/html/arcade-game.html">
-                <img class="project-cover" src="images/arcade-game.png" alt="frogger with lady-bug">
-              </a>
-              <div class="cover-caption"><!--box containing h3 and link-->
-                <a href="https://efectusmagnus.github.io/html/arcade-game.html">
-                  <h3 class="project-name">ARCADE GAME</h3>
-                </a>
-                <a href="https://efectusmagnus.github.io/html/arcade-game.html" class="project-link">https://efectusmagnus.github.io/html/arcade-game.html</a>
-              </div>
-            </div>
-          </section>
         </main>
       </div>
     </div>
+    <script src="js/index.js"></script><!--JavaScript for the button-->
   </body>
 </html>
-

@@ -1,10 +1,200 @@
-body, html {
-  font-family: "Work Sans", sans-serif; /*Google's Font*/
+/*-- Beginn of new content --*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  /*display: Verdana, sans serif;*/
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.1em;
+}
+
+/*-- Slideshow container --*/
+.slideshow-ctn {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border: 1px solid #7d97ad;
+}
+
+.my-slides {
+  display: none;
+  width: 100%;
+  margin: 0.5em;
+}
+
+.slide-img {
+  vertical-align: middle;
+  max-width: 400px;
+  width: 70%;
+  max-height: 266px;
+  text-align: center;
+  padding: 0.5em;
+  background-color: white;
+}
+
+/*-- The dots/buttons/indocators --*/
+.dot-ctn {
+  position: relative;
+  bottom: 5px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.side-div {
+  height: 100%;
+  width: 100%;
+  max-height: 266px;
+  line-height: 0.5em;
+  padding: 0;
+}
+
+.big-title {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0.5em 0 0 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  font-family: 'Nanum Pen Script', cursive;
+  text-decoration: underline;
+  color: black;
+}
+/*-- Caption text --*/
+.text {
+  color: gray;
+  font-size: 1em;
+  padding: 3vw;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+/*--  Fading animation --*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+@keyframes fade {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+/*-- Featured Work --*/
+.middle-title {
+  color: #7d97ad;
+}
+.featured-work {
+  margin: 0;
+  padding: 0;
+}
+.project-ctn {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1000px;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: outside none none;
+  grid-gap: 0.3em;
+}
+.project-list {
+  border: 1px solid #ccc;
+  margin: 0;
+  text-align: center;
+  line-height: 1em;
+  text-decoration: none;
+}
+.project-img {
+  max-width: 400px;
+  width: 100%;
+  padding: 0.5em;
+}
+.project-name {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 1.3em;
+  color: black;
+}
+.project-link {
+  position: relative;
+  bottom: 0;
+  font-size: 1em;
+  color: #2d3c49;
+}
+a {
+  text-decoration: none currentcolor solid;
+  color: orange;
+}
+
+/*-- On smaller screens, decrease text size --*/
+
+@media only screen and (min-width: 0) and (max-width: 640px){
+  .slideshow-ctn {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .side-div {
+    float: right;
+    width: calc(100% - 400px);
+  }
+  .big-title {
+    padding-top: 6vh;
+    font-size: 2em;
+    line-height: 1em;
+  }
+  .text {
+    font-size: 1.3em;
+    line-height: 1em;
+  }
+  .slideshow-ctn {
+    padding-left: 5vw;
+    padding-right: 4vw;
+    padding-bottom: 1vh;
+  }
+  .project-ctn {
+  grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 765px) {
+  .big-title {
+    font-size: 3em;
+  }
+}
+/*-- End of new content --*/
+
+/*body, html {
+  font-family: "Work Sans", sans-serif;
   width: 100%;
   min-height: 100%;
-  max-width: 1330px; /*the maximal width of the page's content*/
+  max-width: 1330px;
   margin: auto;
-}
+}*/
 
 header, footer, section, main, div {
   display: block;
@@ -145,7 +335,6 @@ header {
   padding-top: 2em;
   padding-bottom: 2%; /*a little padding gives more space to the text and makes the hyphenization more natural*/
   background-color: #dfe8ef;
-  /*background-color: #607d8b38; This is actually the best solution for transparency with color and "background-color: rgb(96,125,139,0.22);" This is also good, but somewho does not work for the css validator as well*/
   margin-top: 2.9em;
   border-radius: 5px;
 }
@@ -194,42 +383,6 @@ header {
 a {
   text-decoration: none currentcolor solid;
   color: grey;
-}
-
-/*div containing all projects*/
-.projects {
-  padding-bottom: 4rem;
-  text-align: center;
-  width: 100%;
-}
-
-.project-cover, .cover-caption {
-  overflow:hidden; /*without scrollbars*/
-  position: relative;
-  margin-left: 0;
-  margin-right: 0;
-  padding-top: 1rem;
-}
-
-.project-cover { /*image*/
-  width: 100%;
-}
-
-.cover-caption {
-  line-height: 0.4em;
-}
-
-.project-name {
-  color: #2d3c49;
-  font-size: 1.3em; /*before 1.5em*/
-}
-
-.project-link {
-  padding-bottom: 5%;
-  font-size: 1.1em;
-  word-spacing: normal;
-  word-wrap: break-word;
-  line-height: 1.3em;
 }
 
 /*Responsive*/
@@ -336,7 +489,7 @@ a {
   .header-subtitle {
     font-size: 1.6em;
   }
-  
+
   #text-box,.show-hide, .intro-text {
     font-size: 2em;
   }
@@ -346,15 +499,6 @@ a {
   }
   .project-name {
     font-size: 1.8em;
-  }
-}
-
-@media screen and (min-width:0px) and (max-width: 699px) {
-  .box {
-    width: 96%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
   }
 }
 
@@ -370,50 +514,6 @@ a {
     hyphens: auto; /*For Firefox and others. Seems not to work on Chrome*/
     word-wrap: break-word; /*break a word if it is larger than the div*/
     column-gap: 1.3em;/*gap between columns*/
-  }
-  
-  .projects { /*div containing all projects*/
-    display: flex; /*display the flexible length on flexible items*/
-    flex-wrap: wrap; /*flex items will wrap onto multiple lines, from top to bottom. If there is no more space left, they will go below*/
-  }
-  .box { /*general box containing project-cover, cover-caption, project-name and project-link*/
-    text-align: center;
-    width: 100%;
-  }
-  .one,
-  .two,
-  .three,
-  .four,
-  .five {
-    width: 45%;
-  }
-  .one {
-    order: 5; /*it seems not to be really needed, but just in case, they tell the order of divs*/
-    float: left; /*enables the following div to be left*/
-    padding-right: 2%;
-    padding-left: 3%; /*distance between divs*/
-  }
-  .two {
-    order: 6;
-    float: left;
-    padding-right: 3%;
-  }
-  .three {
-    order: 7;
-    float: left;
-    padding-left:3px;
-  }
-  .four {
-    order: 8; /*it seems not to be really needed, but just in case, they tell the order of divs*/
-    float: left; /*enables the following div to be left*/
-    padding-right: 2%;
-    padding-left: 3%; /*distance between divs*/
-  }
-  .five {
-    order: 9;
-    float: left; /*enables the following div to be left*/
-    padding-right: 2%;
-    padding-left: 3%; /*distance between divs*/
   }
 }
 
@@ -435,47 +535,5 @@ a {
     hyphens: manual; /*This also works for Chrome*/
     word-wrap: break-word;
     column-gap: 2.4em;/*gap between columns*/
-  }
-  .projects { /*div containing all projects*/
-    display: flex; /*display the flexible length on flexible items*/
-    flex-wrap: wrap; /*flex items will wrap onto multiple lines, from top to bottom. If there is no more space left, they will go below*/
-  }
-  .box { /*general box containing project-cover, cover-caption, project-name and project-link*/
-    text-align: center;
-    width: 100%;
-  }
-  .one,
-  .two,
-  .three,
-  .four,
-  .five {
-    width: 30%;
-  }
-  .one {
-    order: 5; /*it seems not to be really needed, but just in case, they tell the order of divs*/
-    float: left; /*enables the following div to be left*/
-    padding-right: 2%;
-    padding-left: 3%; /*distance between divs*/
-  }
-  .two {
-    order: 6;
-    float: left;
-    padding-right: 3%;
-  }
-  .three {
-    order: 7;
-    float: left;
-  }
-  .four {
-    order: 8; /*it seems not to be really needed, but just in case, they tell the order of divs*/
-    float: left; /*enables the following div to be left*/
-    padding-right: 2%;
-    padding-left: 3%; /*distance between divs*/
-  }
-  .five {
-    order: 9;
-    float: left; /*enables the following div to be left*/
-    padding-right: 2%;
-    padding-left: 3%; /*distance between divs*/
   }
 }
