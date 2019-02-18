@@ -73,11 +73,11 @@ content.innerHTML = `${datos.projects.map(slideshow => `
   <div class="my-slides fade">
     <a href="${slideshow.enlace}">
       <img src="${slideshow.image}" alt="${slideshow.attribute}" style="width: 90%; max-width:400px">
+      <div class="side-div">
+        <h3 class="big-title">${slideshow.name}</h3>
+        <p class="text">${slideshow.caption}</p>
+      </div>
     </a>
-    <div class="side-div">
-      <h3 class="big-title">${slideshow.name}</h3>
-      <p class="text">${slideshow.caption}</p>
-    </div>
   </div>
 `).join('')}
   <div class="dot-ctn">
