@@ -51,7 +51,7 @@ document.addEventListener("click", cardClicked); //add "cardClicked" when a card
 let openCards = []; //store an empty array in openCards
 let moveCounter = document.getElementsByClassName("moves")[0];
 //When card is clicked
-function cardClicked() {
+function cardClicked(event) {
   const selection = event.target;
   if ((selection.getAttribute("class") == "card") && openCards.length < 2) {
     displayCard(selection); // shows displayed card
