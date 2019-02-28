@@ -25,7 +25,8 @@ const datos = {
       attribute: "An icon of a map's marker.",
       enlace: 'https://efectusmagnus-map.surge.sh/',
       code: 'https://github.com/efectusmagnus/neighborhood-map-udacity-p8',
-      caption: "Museums in Paderborn!"
+      caption: "Museums in Paderborn!",
+      type: 'react'
     },
     {
       name: "Restaurant's Reviews",
@@ -41,7 +42,8 @@ const datos = {
       attribute: 'Books.',
       enlace: 'https://efectusmagnus-reads.surge.sh/',
       code: 'https://github.com/efectusmagnus/reactnd-project-myreads-starter',
-      caption: 'Mark your books!'
+      caption: 'Mark your books!',
+      type: 'react'
     },
     {
       name: 'Pixel Art Maker',
@@ -88,6 +90,9 @@ content.innerHTML = `${datos.projects.map(slideshow => `
 `
 trabalhos.innerHTML = `${datos.projects.map(project => `
   <li class="project-list">
+    ${project.type === 'react' ? `
+      <span class="badge">REACT</span>
+    ` : ''}
     <a href="${project.enlace}">
       <img class="project-img" src="${project.image}" alt="${project.attribute}">
     </a>

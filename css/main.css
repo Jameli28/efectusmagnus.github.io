@@ -141,6 +141,18 @@ body {
   width: 100%;
   padding: 0.5em;
 }
+.badge {
+  position: relative;
+  margin-top: 0.5em;
+  float: right;
+  color: black;
+  background: #bbb9b9;
+  margin-right: 0.5em;
+  padding: 3px;
+  line-height: 8px;
+  font-size: 0.6em;
+  border-radius: 2px;
+}
 .project-name:hover,
 .project-link:hover,
 .show-hide:hover {
