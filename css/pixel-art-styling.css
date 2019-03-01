@@ -25,9 +25,12 @@ h2:first-of-type {
 }
 
 h3 {
-  color: #2d0404;
+  color: #031e2b;
   font-size: 1.2em;
   font-family: monospace, sans-serif;
+  padding-top: 1em;
+  margin: 0 auto;
+
 }
 
 p {
