@@ -19,6 +19,18 @@ h2:first-of-type {
     margin-top: 0.5em;
 }
 
+h3 {
+  color: #b2b2b2;
+}
+
+p {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
 table,
 tr,
 td {
@@ -40,6 +52,25 @@ td {
 
 input[type=number] {
     width: 6em;
+}
+
+input[type="submit"] {
+  width: 6em;
+  height: 3em;
+  border-radius: 30%;
+  background-color: black;
+  border: transparent;
+  color: white;
+}
+
+input#colorPicker {
+  border-radius: 10px;
+  background-color: transparent;
+  margin-left: 1em;
+  padding: 1px 0;
+  border-color: transparent;
+  width: 6em;
+  height:2.5em;
 }
 
 .submit {
