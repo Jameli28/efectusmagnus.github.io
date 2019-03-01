@@ -8,28 +8,31 @@
   </head>
 
   <body>
-    <h1>Lab: Pixel Art Maker</h1>
+    <main role="main">
+      <h1>Lab: Pixel Art Maker</h1>
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-      <h3>Max. size 200 x 200 squares</h3>
-      <p>Grid height:
-        <input type="number" id="input_height" name="height" min="1" value="1">
-      </p>
-      <p>Grid width:
-        <input type="number" id="input_width" name="width" min="1" value="1">
-      </p>
-      <input type="submit">
-    </form>
-    <section id="draw-canvas" style="display:none">
-      <h2>Design Canvas</h2>
-      <h3>Double-click to remove color</h3>
-      <p>Pick a color:
-        <input type="color" id="colorPicker">
-      </p>
-      <table id="pixel_canvas"></table>
-    </section>
-
+      <h2>Choose Grid Size</h2>
+      <form id="sizePicker">
+        <h3>Max. size 200 x 200 squares</h3>
+        <p>Grid height:
+          <input type="number" id="input_height" name="height" min="1" value="1">
+        </p>
+        <p>Grid width:
+          <input type="number" id="input_width" name="width" min="1" value="1">
+        </p>
+        <input type="submit">
+      </form>
+      <section id="draw-canvas" style="display:none">
+        <h2>Design Canvas</h2>
+        <div class="canvas-ctn">
+          <h3>Double-click to remove color</h3>
+          <p>Pick a color:
+            <input type="color" id="colorPicker">
+          </p>
+          <table id="pixel_canvas"></table>
+        </div>
+      </section>
+    </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="//efectusmagnus.github.io/js/pixel-art-animation.js"></script>
   </body>
