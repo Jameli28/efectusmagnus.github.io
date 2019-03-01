@@ -46,12 +46,14 @@ p {
 table,
 tr,
 td {
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.10980392156862745);
 }
 
 table {
     border-collapse: collapse;
     margin: 0 auto;
+    background-color: white;
+    border-radius: 10px 10px;
 }
 
 tr {
