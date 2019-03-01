@@ -41,7 +41,7 @@ function makeGrid() {
   });
 }
 
-var button = $('input[type="submit"]');
+const button = $('input[type="submit"]');
 //Event listener for cells
 button.click(function(grid) {
   const drawCanvas = document.querySelector('#draw-canvas');
