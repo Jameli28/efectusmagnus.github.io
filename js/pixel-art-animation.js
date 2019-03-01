@@ -44,6 +44,8 @@ function makeGrid() {
 var button = $('input[type="submit"]');
 //Event listener for cells
 button.click(function(grid) {
+  const drawCanvas = document.querySelector('#draw-canvas');
+  drawCanvas.style.display = "block";
   grid.preventDefault();
   makeGrid();
 });
