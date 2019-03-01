@@ -54,7 +54,7 @@ input[type=number] {
     width: 6em;
 }
 
-input[type="submit"] {
+input[type=submit] {
   width: 6em;
   height: 3em;
   border-radius: 30%;
