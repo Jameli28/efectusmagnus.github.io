@@ -3,6 +3,8 @@ body {
     background: radial-gradient(circle, #9966cc, #cc66b3);
     max-width: 1000px;
     margin: 0 auto;
+    border-style: dashed;
+    padding: 1em;
 
 }
 
@@ -94,13 +96,13 @@ input#colorPicker {
   color: blue;
 }
 #draw-canvas {
-  border-style: dashed;
   min-width: 15em;
   margin: 1em auto;
   /*padding: 0 0 1em 0;*/
 }
 .canvas-ctn {
   border-style: dashed;
+  border-radius: 10px 10px;
   margin: 1em auto;
   padding: 0 1em 1em 1em;
 }
