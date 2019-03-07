@@ -82,7 +82,7 @@ body {
 }
 /*-- Caption text --*/
 .text {
-  color: gray;
+  color: #555353;
   font-size: 1em;
   padding: 3vw;
   position: relative;
@@ -376,7 +376,7 @@ header {
 /*link*/
 a {
   text-decoration: none currentcolor solid;
-  color: grey;
+  color: #555353;
 }
 footer {
   color: black;
