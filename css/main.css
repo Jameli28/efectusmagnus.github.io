@@ -25,6 +25,9 @@ body {
   display: none;
   width: 100%;
   margin: 0.5em;
+  -webkit-user-select: none; /*Safari 3.1+*/
+  -moz-user-select: none; /* Firefox 2+ */
+  -user-select: none; /* Standard Syntax */
 }
 
 .slide-img {
