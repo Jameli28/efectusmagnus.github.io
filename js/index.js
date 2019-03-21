@@ -192,12 +192,12 @@ function moveTouch(e) {
     // sliding vertically
     if (diffY > 0) {
       //swipped up
-      console.log("swipped up");
-      //return;
+      //console.log("swipped up");
+      return;
     } else {
       // swipped down
-      //return;
-      console.log("swipped down");
+      return;
+      //console.log("swipped down");
     }
   }
   initialX = null;
