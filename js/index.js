@@ -183,10 +183,10 @@ function moveTouch(e) {
     // sliding horizontally
     if (diffX > 0) {
       //swipped left
-      moveSlide(-1);
+      moveSlide(1);
     } else {
       //swipped right
-      moveSlide(1);
+      moveSlide(-1);
     }
   } else {
     // sliding vertically
