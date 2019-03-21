@@ -136,7 +136,7 @@ showOnClick(slideIndex);
 function currentSlide(n) {
   showOnClick(slideIndex = n);
 }
-
+// Click on a dot to change the select a slideshow
 function showOnClick(n) {
   let i;
   const slides = document.getElementsByClassName("my-slides");
@@ -156,6 +156,9 @@ function showOnClick(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+// Adapted from:
+// https://www.kirupa.com/html5/detecting_touch_swipe_gestures.htm
+// Slideshow touch events
 content.addEventListener("touchstart", startTouch, false);
 content.addEventListener("touchmove", moveTouch, false);
 
@@ -208,7 +211,7 @@ function moveTouch(e) {
 function moveSlide(n) {
   showOnTouch(slideIndex += n);
 }
-
+// Called after a touch event
 function showOnTouch(n) {
   let i;
   const slides = document.getElementsByClassName("my-slides");
@@ -228,6 +231,7 @@ function showOnTouch(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
 function showHide() {
   var x = document.getElementById("text-box");
   if (x.style.display === "none") { //if the text is hidden,
