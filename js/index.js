@@ -156,7 +156,78 @@ function showOnClick(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+content.addEventListener("touchstart", startTouch, false);
+content.addEventListener("touchmove", moveTouch, false);
 
+// Swipe Up/Down/Left/Right
+let initialX = null;
+let initialY = null;
+
+function startTouch(e) {
+  initialX = e.touches[0].clientX;
+  initialY = e.touches[0].clientY;
+}
+
+function moveTouch(e) {
+  if (initialX === null) {
+    return;
+  }
+  if (initialY === null) {
+    return;
+  }
+  let currentX = e.touches[0].clientX;
+  let currentY = e.touches[0].clientY;
+  let diffX = initialX - currentX;
+  let diffY = initialY - currentY;
+  if (Math.abs(diffX) > Math.abs(diffY)) {
+    // sliding horizontally
+    if (diffX > 0) {
+      //swipped left
+      moveSlide(-1);
+    } else {
+      //swipped right
+      moveSlide(1);
+    }
+  } else {
+    // sliding vertically
+    if (diffY > 0) {
+      //swipped up
+      console.log("swipped up");
+      //return;
+    } else {
+      // swipped down
+      //return;
+      console.log("swipped down");
+    }
+  }
+  initialX = null;
+  initialY = null;
+  e.preventDefault();
+}
+
+function moveSlide(n) {
+  showOnTouch(slideIndex += n);
+}
+
+function showOnTouch(n) {
+  let i;
+  const slides = document.getElementsByClassName("my-slides");
+  const dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
 function showHide() {
   var x = document.getElementById("text-box");
   if (x.style.display === "none") { //if the text is hidden,
