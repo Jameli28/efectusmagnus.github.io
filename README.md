@@ -1,4 +1,4 @@
-# My portfolio with projects and exercices
+# Welcome to my portfolio
 
 This is a collection of my Udacity Projects for the Front End Nanodegree Program.
 
