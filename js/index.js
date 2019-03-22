@@ -8,7 +8,7 @@ const datos = {
       image: 'https://efectusmagnus.github.io/images/arcade-game.png',
       attribute: 'Frogger with lady-bug.',
       enlace: 'https://efectusmagnus.github.io/html/arcade-game.html',
-      code: 'https://github.com/efectusmagnus/efectusmagnus.github.io',
+      code: 'https://github.com/efectusmagnus/new-arcade-game',
       caption: 'Collect gems and water points!'
     },
     {
