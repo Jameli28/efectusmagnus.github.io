@@ -186,8 +186,8 @@ function showOnClick(n) {
 // Adapted from:
 // https://www.kirupa.com/html5/detecting_touch_swipe_gestures.htm
 // Slideshow touch events
-content.addEventListener("touchstart", startTouch, false);
-content.addEventListener("touchmove", moveTouch, false);
+slideCtn.addEventListener("touchstart", startTouch, false);
+slideCtn.addEventListener("touchmove", moveTouch, false);
 
 // Swipe Up/Down/Left/Right
 let initialX = null;
