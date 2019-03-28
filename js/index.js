@@ -1,6 +1,7 @@
-const content = document.querySelector('.slideshow-ctn');
+const SlideCtn = document.querySelector('.slideshow-ctn');
 const dotClick = document.createElement('div');
-const trabalhos = document.querySelector('.project-ctn');
+const proCtn = document.querySelector('.project-ctn');
+const exerCtn = document.querySelector('.exercices-ctn');
 const datos = {
   projects: [
     {
@@ -75,7 +76,7 @@ const datos = {
     }
   ]
 }
-content.innerHTML = `${datos.projects.map(slideshow => `
+slideCtn.innerHTML = `${datos.projects.map(slideshow => `
   <div class="my-slides fade">
     <a href="${slideshow.enlace}">
       <img src="${slideshow.image}" alt="${slideshow.attribute}" style="width: 90%; max-width:400px">
@@ -92,7 +93,8 @@ content.innerHTML = `${datos.projects.map(slideshow => `
     `).join('')}
   </div>
 `
-trabalhos.innerHTML = `${datos.projects.map(project => `
+/* Container with featured projects */
+proCtn.innerHTML = `${datos.projects.map(project => `
   <li class="project-list">
     ${project.type === 'react' ? `
       <span class="badge">REACT</span>
@@ -109,6 +111,25 @@ trabalhos.innerHTML = `${datos.projects.map(project => `
   </li>
 `).join('')}`
 
+/* Container with exercices of the challenge phase */
+exerCtn.innerHTML = `${datos.exercices.map(exercice => `
+  <li class="project-list">
+    ${exercice.type === 'react' ? `
+      <span class="badge">REACT</span>
+    ` : ''}
+      <span class="badge">${exercice.type}</span>
+    <a href="${exercice.enlace}">
+      <img class="project-img" src="${exercice.image}" alt="${exercice.attribute}">
+    </a>
+
+    <a href="${exercice.enlace}">
+      <h4 class="project-name" style="text-align: center">${exercice.name}</h4>
+    </a>
+    <a href="${exercice.code}">
+      <p class="project-link">Project Code</p>
+    </a>
+  </li>
+`).join('')}`
 /*-- Slideshow --*/
 /*-- Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto --*/
 /*-- Source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow --*/
