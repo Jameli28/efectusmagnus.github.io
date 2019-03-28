@@ -534,4 +534,7 @@ footer {
     word-wrap: break-word;
     column-gap: 2.4em;/*gap between columns*/
   }
+  .badge {
+    font-size: 0.8em;
+  }
 }
