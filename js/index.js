@@ -116,9 +116,6 @@ proCtn.innerHTML = `${datos.projects.map(project => `
 /* Container with exercices of the challenge phase */
 exerCtn.innerHTML = `${datos.exercices.map(exercice => `
   <li class="project-list">
-    ${exercice.type === 'react' ? `
-      <span class="badge">REACT</span>
-    ` : ''}
       <span class="badge">${exercice.type}</span>
     <a href="${exercice.enlace}">
       <img class="project-img" src="${exercice.image}" alt="${exercice.attribute}" style="max-width:400px">
