@@ -92,7 +92,7 @@ slideCtn.innerHTML = `${datos.projects.map(slideshow => `
   </div>
 `).join('')}
   <div class="dot-ctn">
-    ${Array(8).fill().map((item, i) => `
+    ${Array(5).fill().map((item, i) => `
       <span class="dot" onclick="currentSlide(${i+1})" tabindex="0"></span>
     `).join('')}
   </div>
