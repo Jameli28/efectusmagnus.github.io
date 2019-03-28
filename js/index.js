@@ -10,7 +10,8 @@ const datos = {
       attribute: 'Frogger with lady-bug.',
       enlace: 'https://efectusmagnus.github.io/html/arcade-game.html',
       code: 'https://github.com/efectusmagnus/new-arcade-game',
-      caption: 'Collect gems and water points!'
+      caption: 'Collect gems and water points!',
+      type: 'OOP'
     },
     {
       name: 'Memory Game',
@@ -28,7 +29,7 @@ const datos = {
       enlace: 'https://efectusmagnus-map.surge.sh/',
       code: 'https://github.com/efectusmagnus/neighborhood-map-udacity-p8',
       caption: "Museums in Paderborn!",
-      type: 'react'
+      type: 'REACT'
     },
     {
       name: "Restaurants' Reviews",
@@ -46,8 +47,10 @@ const datos = {
       enlace: 'https://efectusmagnus-reads.surge.sh/',
       code: 'https://github.com/efectusmagnus/reactnd-project-myreads-starter',
       caption: 'Mark your books!',
-      type: 'react'
-    },
+      type: 'REACT'
+    }
+  ],
+  exercices: [
     {
       name: 'Pixel Art Maker',
       image: 'https://efectusmagnus.github.io/images/mario-pixeled.png',
@@ -58,6 +61,15 @@ const datos = {
       type: 'jQUERY'
     },
     {
+      name: "Town's News",
+      image: 'https://efectusmagnus.github.io/images/town.png',
+      attribute: 'A dalmatian.',
+      enlace: 'https://efectusmagnus.github.io/html/towns-news.html',
+      code: 'https://github.com/efectusmagnus/efectusmagnus.github.io',
+      caption: 'All around art!',
+      type: 'CSS'
+    },
+    {
       name: "Animal's Card",
       image: 'https://efectusmagnus.github.io/images/dalmatian.png',
       attribute: 'A dalmatian.',
@@ -65,14 +77,6 @@ const datos = {
       code: 'https://codepen.io/Efectus-Magnus/pen/WMXRaG',
       caption: 'A dark print!',
       type: 'HTML'
-    },
-    {
-      name: "Town's News",
-      image: 'https://efectusmagnus.github.io/images/town.png',
-      attribute: 'A dalmatian.',
-      enlace: 'https://efectusmagnus.github.io/html/towns-news.html',
-      code: 'https://github.com/efectusmagnus/efectusmagnus.github.io',
-      caption: 'All around art!'
     }
   ]
 }
