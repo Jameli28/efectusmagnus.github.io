@@ -1,4 +1,4 @@
-const SlideCtn = document.querySelector('.slideshow-ctn');
+const slideCtn = document.querySelector('.slideshow-ctn');
 const dotClick = document.createElement('div');
 const proCtn = document.querySelector('.project-ctn');
 const exerCtn = document.querySelector('.exercices-ctn');
