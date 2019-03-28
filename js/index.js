@@ -100,11 +100,9 @@ slideCtn.innerHTML = `${datos.projects.map(slideshow => `
 /* Container with featured projects */
 proCtn.innerHTML = `${datos.projects.map(project => `
   <li class="project-list">
-    ${project.type === 'react' ? `
-      <span class="badge">REACT</span>
-    ` : ''}
+    <span class="badge">${project.type}</span>
     <a href="${project.enlace}">
-      <img class="project-img" src="${project.image}" alt="${project.attribute}">
+      <img class="project-img" src="${project.image}" alt="${project.attribute}" style="max-width:400px">
     </a>
     <a href="${project.enlace}">
       <h4 class="project-name" style="text-align: center">${project.name}</h4>
@@ -123,7 +121,7 @@ exerCtn.innerHTML = `${datos.exercices.map(exercice => `
     ` : ''}
       <span class="badge">${exercice.type}</span>
     <a href="${exercice.enlace}">
-      <img class="project-img" src="${exercice.image}" alt="${exercice.attribute}">
+      <img class="project-img" src="${exercice.image}" alt="${exercice.attribute}" style="max-width:400px">
     </a>
 
     <a href="${exercice.enlace}">
