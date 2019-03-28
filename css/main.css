@@ -129,6 +129,12 @@ body {
   margin: 0;
   padding: 0;
 }
+.global-description {
+  text-transform: uppercase;
+  color: #7d97ad;
+  text-align: center;
+  font-family: 'Nanum Pen Script', cursive;
+}
 .exercices-ctn,
 .project-ctn {
   grid-template-columns: repeat(2, 1fr);
@@ -539,9 +545,5 @@ footer {
   }
   .global-description {
     font-size: 1.4em;
-    text-transform: uppercase;
-    color: #7d97ad;
-    text-align: center;
-    font-family: 'Nanum Pen Script', cursive;
   }
 }
