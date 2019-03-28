@@ -4,7 +4,7 @@ const trabalhos = document.querySelector('.project-ctn');
 const datos = {
   projects: [
     {
-      name: 'Arcade Game',
+      name: 'Frogger Arcade Game',
       image: 'https://efectusmagnus.github.io/images/arcade-game.png',
       attribute: 'Frogger with lady-bug.',
       enlace: 'https://efectusmagnus.github.io/html/arcade-game.html',
@@ -17,7 +17,8 @@ const datos = {
       attribute: 'An icon of a brain.',
       enlace: 'https://efectusmagnus.github.io/html/memory-game.html',
       code: 'https://github.com/efectusmagnus/memory-game',
-      caption: 'Have fun trainning your brain!'
+      caption: 'Have fun trainning your brain!',
+      type: 'DOM'
     },
     {
       name: 'Neighborhood Map',
@@ -29,15 +30,16 @@ const datos = {
       type: 'react'
     },
     {
-      name: "Restaurant's Reviews",
+      name: "Restaurants' Reviews",
       image: 'https://efectusmagnus.github.io/images/tomate-pizza.png',
       attribute: "An icon of a map's marker.",
       enlace: 'https://efectusmagnus-reviews.surge.sh/',
       code: 'https://github.com/efectusmagnus/mws-restaurant-stage-1',
-      caption: 'Find your cuisine in New York!'
+      caption: 'Find your cuisine in New York!',
+      type: 'JS'
     },
     {
-      name: "Book's Reads",
+      name: "Books' Reads",
       image: 'https://efectusmagnus.github.io/images/books-reads.png',
       attribute: 'Books.',
       enlace: 'https://efectusmagnus-reads.surge.sh/',
@@ -51,7 +53,8 @@ const datos = {
       attribute: 'A picture of Mario in pixel form.',
       enlace: 'https://efectusmagnus.github.io/html/pixel-art-maker.html',
       code: 'https://codepen.io/Efectus-Magnus/pen/qxNeYz',
-      caption: 'Your Imagination in Pixels!'
+      caption: 'Your Imagination in Pixels!',
+      type: 'jQUERY'
     },
     {
       name: "Animal's Card",
@@ -59,7 +62,8 @@ const datos = {
       attribute: 'A dalmatian.',
       enlace: 'https://efectusmagnus.github.io/html/animal-card.html',
       code: 'https://codepen.io/Efectus-Magnus/pen/WMXRaG',
-      caption: 'A dark print!'
+      caption: 'A dark print!',
+      type: 'HTML'
     },
     {
       name: "Town's News",
