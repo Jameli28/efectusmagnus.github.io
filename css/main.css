@@ -537,4 +537,11 @@ footer {
   .badge {
     font-size: 0.8em;
   }
+  .global-description {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: #7d97ad;
+    text-align: center;
+    font-family: 'Nanum Pen Script', cursive;
+  }
 }
