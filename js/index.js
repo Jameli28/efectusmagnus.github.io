@@ -102,7 +102,7 @@ proCtn.innerHTML = `${datos.projects.map(project => `
   <li class="project-list">
     <span class="badge">${project.type}</span>
     <a href="${project.enlace}">
-      <img class="project-img" src="${project.image}" alt="${project.attribute}" style="max-width:400px">
+      <img class="project-img" src="${project.image}" alt="${project.attribute}" style="max-width:311px">
     </a>
     <a href="${project.enlace}">
       <h4 class="project-name" style="text-align: center">${project.name}</h4>
@@ -118,7 +118,7 @@ exerCtn.innerHTML = `${datos.exercices.map(exercice => `
   <li class="project-list">
       <span class="badge">${exercice.type}</span>
     <a href="${exercice.enlace}">
-      <img class="project-img" src="${exercice.image}" alt="${exercice.attribute}" style="max-width:400px">
+      <img class="project-img" src="${exercice.image}" alt="${exercice.attribute}" style="max-width:311px">
     </a>
 
     <a href="${exercice.enlace}">
