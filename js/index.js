@@ -11,7 +11,8 @@ const datos = {
       enlace: 'https://efectusmagnus.github.io/html/arcade-game.html',
       code: 'https://github.com/efectusmagnus/new-arcade-game',
       caption: 'Collect gems and water points!',
-      type: 'OOP'
+      type: 'OOP',
+      description: 'Fucused on object-oriented programming with "Vanilla" JavaScript, principally on classes and prototypes for creating a game on canvas.'
     },
     {
       name: 'Memory Game',
@@ -20,7 +21,8 @@ const datos = {
       enlace: 'https://efectusmagnus.github.io/html/memory-game.html',
       code: 'https://github.com/efectusmagnus/memory-game',
       caption: 'Have fun trainning your brain!',
-      type: 'DOM'
+      type: 'DOM',
+      description: 'A complete browser-based card matching game; from building a grid of cards, adding functionality to handle user input, and implementing gameplay logic. The main point of this project was to manipulate the DOM, manage functions, arrays, objects, conditionals and loops.'
     },
     {
       name: 'Neighborhood Map',
@@ -29,25 +31,28 @@ const datos = {
       enlace: 'https://efectusmagnus-map.surge.sh/',
       code: 'https://github.com/efectusmagnus/neighborhood-map-udacity-p8',
       caption: "Museums in Paderborn!",
-      type: 'REACT'
+      type: 'REACT',
+      description: 'A single-page application writing with React.js featuring a map of the museums in Paderborn. The aim of this project was to understand and use API Services, such as Google Maps APIs and Foursquare.'
     },
     {
-      name: "Restaurants' Reviews",
+      name: "Restaurant Reviews",
       image: 'https://efectusmagnus.github.io/images/tomate-pizza.png',
       attribute: "An icon of a map's marker.",
       enlace: 'https://efectusmagnus-reviews.surge.sh/',
       code: 'https://github.com/efectusmagnus/mws-restaurant-stage-1',
       caption: 'Find your cuisine in New York!',
-      type: 'JS'
+      type: 'JS',
+      description: 'A Progressive Web Application written in “Vanilla” JavaScript. The main emphasis was in creating and chaining promises, which included writing a Service Worker to cache assets for offline use.'
     },
     {
-      name: "Books' Reads",
+      name: "MyReads",
       image: 'https://efectusmagnus.github.io/images/books-reads.png',
       attribute: 'Books.',
       enlace: 'https://efectusmagnus-reads.surge.sh/',
       code: 'https://github.com/efectusmagnus/reactnd-project-myreads-starter',
       caption: 'Mark your books!',
-      type: 'REACT'
+      type: 'REACT',
+      description: 'A React Application that utilize React components to manage the user interface of a virtual bookcase to store books and follow what one is reading. The focal points were Rendering UI with React and External Data, State Management, as well as Managing App Location with React Router.'
     }
   ],
   exercices: [
@@ -58,7 +63,8 @@ const datos = {
       enlace: 'https://efectusmagnus.github.io/html/pixel-art-maker.html',
       code: 'https://codepen.io/Efectus-Magnus/pen/qxNeYz',
       caption: 'Your Imagination in Pixels!',
-      type: 'jQUERY'
+      type: 'jQUERY',
+      description: 'A jQuerry application to draw with clicks.'
     },
     {
       name: "Town's News",
@@ -67,7 +73,8 @@ const datos = {
       enlace: 'https://efectusmagnus.github.io/html/towns-news.html',
       code: 'https://github.com/efectusmagnus/efectusmagnus.github.io',
       caption: 'All around art!',
-      type: 'CSS'
+      type: 'CSS',
+      description: 'Mainly based on CSS. This website mimics a simple online newspaper.'
     },
     {
       name: "Animal's Card",
@@ -76,7 +83,8 @@ const datos = {
       enlace: 'https://efectusmagnus.github.io/html/animal-card.html',
       code: 'https://codepen.io/Efectus-Magnus/pen/WMXRaG',
       caption: 'A dark print!',
-      type: 'HTML'
+      type: 'HTML',
+      description: 'An animal trading card mainly based on HTML and CSS to practice syntax, standard properties and values.'
     }
   ]
 }
