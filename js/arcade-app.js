@@ -6,8 +6,8 @@ let allGemScores;
 
 const enemySpeed = [2, 2.1, 3, 3.5, 4, 4.5/*, 5, 5.5, 6, 6.5, 7*/];
 const gemSprites = [
-  '//efectusmagnus.github.io/images/gem-blue.png', 
-  '//efectusmagnus.github.io/images/gem-orange.png', 
+  '//efectusmagnus.github.io/images/gem-blue.png',
+  '//efectusmagnus.github.io/images/gem-orange.png',
   '//efectusmagnus.github.io/images/gem-green.png'
 ];
 const gemPosX = [13, 114, 216, 316, 417];
@@ -267,7 +267,7 @@ const startGame = function(sprite) {
   };
   //This listens for key presses and sends the keys to Player.handleInput() method.
   document.addEventListener('keyup', function(e) {
-      var allowedKeys = {
+      const allowedKeys = {
           37: 'left',
           38: 'up',
           39: 'right',
@@ -279,7 +279,7 @@ const startGame = function(sprite) {
   /* Inspiration from this video called "Handling Events for many elements":
    https://www.youtube.com/watch?v=Xwq1Hj1DyDM */
   //This listens for clicks and sends the clicks to Player.handleInput2() method.
-  var theParent = document.querySelector("#btn-panel");
+  const theParent = document.querySelector("#btn-panel");
   theParent.addEventListener("click", getChildren, false);
   function getChildren(e) {
   	if (e.target !== e.currentTarget) {
@@ -304,6 +304,6 @@ const startGame = function(sprite) {
 /*Code from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup*/
 // When the user clicks on div, open the popup
 function popupInfo() {
-    var popup = document.getElementById("myPopup");
+    const popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 }
