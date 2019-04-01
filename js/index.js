@@ -113,9 +113,7 @@ proCtn.innerHTML = `${datos.projects.map(project => `
       <img class="project-img" src="${project.image}" alt="${project.attribute}" style="max-width:311px">
     </a>
     <button class="tooltip" role="tooltip" aria-describedby="mytooltip">
-      <a href="${project.enlace}">
-        <h4 class="project-name" style="text-align: center">${project.name}</h4>
-      </a>
+      <h4 class="project-name" style="text-align: center">${project.name}</h4>
       <span id="mytooltip" role="tooltip" class="tooltiptext" aria-hidden="true">
         <p class="mini-description"><strong>Description: </strong>${project.description}</p>
       </span>
@@ -134,12 +132,10 @@ exerCtn.innerHTML = `${datos.exercices.map(exercice => `
       <img class="project-img" src="${exercice.image}" alt="${exercice.attribute}" style="max-width:311px">
     </a>
     <button class="tooltip" role="tooltip" aria-describedby="mytooltip">
-    <a href="${exercice.enlace}">
       <h4 class="project-name" style="text-align: center">${exercice.name}</h4>
-    </a>
-    <span id="mytooltip" role="tooltip" class="tooltiptext" aria-hidden="true">
-      <p class="mini-description"><strong>Description: </strong>${exercice.description}</p>
-    </span>
+      <span id="mytooltip" role="tooltip" class="tooltiptext" aria-hidden="true">
+        <p class="mini-description"><strong>Description: </strong>${exercice.description}</p>
+      </span>
     </button>
     <a href="${exercice.code}">
       <p class="project-link">Project Code</p>
