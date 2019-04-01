@@ -12,7 +12,7 @@ const datos = {
       code: 'https://github.com/efectusmagnus/new-arcade-game',
       caption: 'Collect gems and water points!',
       type: 'OOP',
-      description: 'Fucused on object-oriented programming with "Vanilla" JavaScript, principally on classes and prototypes for creating a game on canvas.'
+      description: 'Focused on object-oriented programming with "Vanilla" JavaScript, principally on classes and prototypes for creating a game on canvas.'
     },
     {
       name: 'Memory Game',
@@ -22,7 +22,7 @@ const datos = {
       code: 'https://github.com/efectusmagnus/memory-game',
       caption: 'Have fun trainning your brain!',
       type: 'DOM',
-      description: 'A complete browser-based card matching game; from building a grid of cards, adding functionality to handle user input, and implementing gameplay logic. The main point of this project was to manipulate the DOM, manage functions, arrays, objects, conditionals and loops.'
+      description: 'A browser-based card matching game. Besides handling user input and implementing gameplay logic, the focal point of the project was to manipulate the DOM, manage functions, arrays, objects, conditionals and loops.'
     },
     {
       name: 'Neighborhood Map',
@@ -32,7 +32,7 @@ const datos = {
       code: 'https://github.com/efectusmagnus/neighborhood-map-udacity-p8',
       caption: "Museums in Paderborn!",
       type: 'REACT',
-      description: 'A single-page application writing with React.js featuring a map of the museums in Paderborn. The aim of this project was to understand and use API Services, such as Google Maps APIs and Foursquare.'
+      description: "A single-page application writing with React.js featuring a map of Paderborn's museums. The aim of this project was to understand and use API Services, such as Google Maps APIs and Foursquare."
     },
     {
       name: "Restaurant Reviews",
@@ -52,7 +52,7 @@ const datos = {
       code: 'https://github.com/efectusmagnus/reactnd-project-myreads-starter',
       caption: 'Mark your books!',
       type: 'REACT',
-      description: 'A React Application that utilize React components to manage the user interface of a virtual bookcase to store books and follow what one is reading. The focal points were Rendering UI with React and External Data, State Management, as well as Managing App Location with React Router.'
+      description: 'A React Application that utilizes React components in order to manage the user interface of a virtual bookcase, which stores and categorizes books. Focal points: to render UI with React and External Data, manage the State and the App Location with React Router.'
     }
   ],
   exercices: [
@@ -84,7 +84,7 @@ const datos = {
       code: 'https://codepen.io/Efectus-Magnus/pen/WMXRaG',
       caption: 'A dark print!',
       type: 'HTML',
-      description: 'An animal trading card mainly based on HTML and CSS to practice syntax, standard properties and values.'
+      description: 'An animal trading card. Mainly based on HTML and CSS to practice syntax, standard properties and values.'
     }
   ]
 }
@@ -112,9 +112,14 @@ proCtn.innerHTML = `${datos.projects.map(project => `
     <a href="${project.enlace}">
       <img class="project-img" src="${project.image}" alt="${project.attribute}" style="max-width:311px">
     </a>
-    <a href="${project.enlace}">
-      <h4 class="project-name" style="text-align: center">${project.name}</h4>
-    </a>
+    <button class="tooltip" role="tooltip" aria-describedby="mytooltip">
+      <a href="${project.enlace}">
+        <h4 class="project-name" style="text-align: center">${project.name}</h4>
+      </a>
+      <span id="mytooltip" role="tooltip" class="tooltiptext" aria-hidden="true">
+        <p class="mini-description"><strong>Description: </strong>${project.description}</p>
+      </span>
+    </button>
     <a href="${project.code}">
       <p class="project-link">Project Code</p>
     </a>
@@ -128,10 +133,14 @@ exerCtn.innerHTML = `${datos.exercices.map(exercice => `
     <a href="${exercice.enlace}">
       <img class="project-img" src="${exercice.image}" alt="${exercice.attribute}" style="max-width:311px">
     </a>
-
+    <button class="tooltip" role="tooltip" aria-describedby="mytooltip">
     <a href="${exercice.enlace}">
       <h4 class="project-name" style="text-align: center">${exercice.name}</h4>
     </a>
+    <span id="mytooltip" role="tooltip" class="tooltiptext" aria-hidden="true">
+      <p class="mini-description"><strong>Description: </strong>${exercice.description}</p>
+    </span>
+    </button>
     <a href="${exercice.code}">
       <p class="project-link">Project Code</p>
     </a>
