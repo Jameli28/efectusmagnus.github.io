@@ -141,7 +141,7 @@ body {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
+  /*border-bottom: 1px dotted black;*/
   border: transparent;
   background-color: transparent;
 }
@@ -177,7 +177,7 @@ body {
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
-
+.tooltip:active .tooltiptext,
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
@@ -307,7 +307,7 @@ header {
   padding-right: 0.6rem;
   padding-bottom: 2vh;
 }
-/*Udacity's logo*/
+/*My logo*/
 .header-logo {
   max-height: 52px;
   max-width: 52px;
