@@ -9,7 +9,7 @@ body {
   padding: 1em;
 }
 .number-ctn,
-.draw-canvas {
+#draw-canvas {
   border: 20px solid #2d2e2f;
   padding: 1em;
   margin-top: -20px;
