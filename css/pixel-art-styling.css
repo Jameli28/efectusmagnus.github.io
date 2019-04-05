@@ -8,11 +8,11 @@ body {
   margin: 0 auto;
   padding: 1em;
 }
+h1,
 .number-ctn,
 #draw-canvas {
   border: 20px solid #2d2e2f;
   padding: 1em;
-  margin-top: -20px;
   margin-bottom: 1em;
   box-shadow: 0 25px 6px 0 rgba(0, 0, 0, 0.12), 0 25px 6px 0 rgba(0, 0, 0, 0.12);
 }
@@ -20,6 +20,7 @@ h1 {
   font-family: Monoton;
   font-size: 70px;
   margin: 0.2em;
+  background-color: white;
 }
 
 h2 {
@@ -105,6 +106,7 @@ input#colorPicker {
   color: blue;
 }
 .number-ctn {
+  margin-top: -20px;
   max-width: 15em;
   background-color: rgb(252, 210, 25);
 }
