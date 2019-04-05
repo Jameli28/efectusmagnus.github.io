@@ -1,6 +1,9 @@
 body {
     text-align: center;
-    background: radial-gradient(circle, #9966cc, #6f5ee1);
+    background-image: url(images/meu-pequeno-mondrian.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background: radial-gradient(circle, #9966cc, #6f5ee1);*/
     max-width: 1000px;
     margin: 0 auto;
     border-style: dashed;
