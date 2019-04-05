@@ -1,30 +1,35 @@
 body {
-    text-align: center;
-    background-image: url(../images/meu-pequeno-mondrian.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*background: radial-gradient(circle, #9966cc, #6f5ee1);*/
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 1em;
+  text-align: center;
+  background-image: url(../images/meu-pequeno-mondrian.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background: radial-gradient(circle, #9966cc, #6f5ee1);*/
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1em;
 }
-
+.number-ctn,
+.draw-canvas {
+  background-color: rgba(158, 158, 158, 0.56);
+  border-radius: 10px 10px;
+  padding: 1em;
+}
 h1 {
-    font-family: Monoton;
-    font-size: 70px;
-    margin: 0.2em;
+  font-family: Monoton;
+  font-size: 70px;
+  margin: 0.2em;
 }
 
 h2 {
-    margin: 1em 0 0.25em;
-    color: #181719;
+  margin: 1em 0 0.25em;
+  color: #181719;
 }
 
 h2:first-of-type {
-    font-family: monospace;
-    text-transform: uppercase;
-    margin: 0 auto;
-    border-radius: 10px 10px;
+  font-family: monospace;
+  text-transform: uppercase;
+  margin: 0 auto;
+  border-radius: 10px 10px;
 }
 
 h3 {
@@ -47,22 +52,22 @@ p {
 table,
 tr,
 td {
-    border: 1px solid rgba(0, 0, 0, 0.10980392156862745);
+  border: 1px solid rgba(0, 0, 0, 0.10980392156862745);
 }
 
 table {
-    border-collapse: collapse;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: 10px 10px;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px 10px;
 }
 
 tr {
-    height: 40px;
+  height: 40px;
 }
 
 td {
-    width: 40px;
+  width: 40px;
 }
 
 form#sizePicker {
@@ -70,7 +75,7 @@ form#sizePicker {
   margin: 1em auto;
 }
 input[type=number] {
-    width: 6em;
+  width: 6em;
 }
 
 input[type=submit] {
@@ -99,8 +104,6 @@ input#colorPicker {
 }
 #draw-canvas {
   min-width: 15em;
-  margin: 1em auto;
-  /*padding: 0 0 1em 0;*/
 }
 .canvas-ctn {
   border-style: dashed;
