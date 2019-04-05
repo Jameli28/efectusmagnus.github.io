@@ -106,6 +106,7 @@ input#colorPicker {
   color: blue;
 }
 .number-ctn {
+  max-width: 15em;
   background-color: rgb(252, 210, 25);
 }
 #draw-canvas {
