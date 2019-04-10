@@ -14,6 +14,8 @@ body {
 /*-- Slideshow container --*/
 .slideshow-ctn {
   max-width: 1000px;
+  min-width: 316.81px;
+  min-height: 308.59px;
   position: relative;
   margin: auto;
   border: 1px solid #7d97ad;
@@ -135,11 +137,7 @@ body {
   font-family: 'Nanum Pen Script', cursive;
   padding: 0 5em 0 5em;
 }
-.slideshow-ctn,
-.project-list,
-.show-hide {
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
-}
+
 /* Popup tooltip*/
 /*-- Inspiration from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_tooltip--*/
 /*-- tooltip container --*/
@@ -235,6 +233,7 @@ body {
   grid-gap: 0.3em;
 }
 .project-list {
+  min-width: 156px;
   border: 1px solid #7d97ad;
   margin: 0;
   text-align: center;
