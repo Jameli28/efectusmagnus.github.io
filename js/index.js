@@ -269,6 +269,44 @@ function showOnTouch(n) {
   dots[slideIndex - 1].className += " active";
 }
 
+// tooltip
+/*if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  const infoBtn = document.querySelectorAll('.tooltip');
+  let b;
+
+  for (b = 0; b < infoBtn.length; b++) {
+    infoBtn[b].addEventListener("click", function() {
+
+      //const infoText = this.nextElementSibling;
+      const infoText = this.lastElementChild;
+      if (infoText.style.visibility === "visible") {
+        infoText.style.visibility = "hidden";
+      } else {
+        infoText.style.visibility = "visible";
+      }
+    });
+  }
+}*/
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  const infoBtn = document.querySelectorAll('.tooltip');
+  let b;
+
+  for (b = 0; b < infoBtn.length; b++) {
+    infoBtn[b].addEventListener("click", function() {
+
+      //const infoText = this.nextElementSibling;
+      const infoText = this.lastElementChild;
+      if (infoText.style.display === "block") {
+        infoText.style.display = "none";
+      } else {
+        infoText.style.display = "block";
+      }
+    });
+  }
+}
+
+
 function showHide() {
   var x = document.getElementById("text-box");
   if (x.style.display === "none") { //if the text is hidden,
