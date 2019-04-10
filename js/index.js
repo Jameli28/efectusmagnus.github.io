@@ -22,7 +22,8 @@ const datos = {
       code: 'https://github.com/efectusmagnus/memory-game',
       caption: 'Have fun trainning your brain!',
       type: 'DOM',
-      description: 'A browser-based card matching game. Besides handling user input and implementing gameplay logic, the focal point of the project was to manipulate the DOM, manage functions, arrays, objects, conditionals and loops.'
+      description: 'A browser-based card matching game.',
+      aim: 'Besides handling user input and implementing gameplay logic, the focal point of the project was to manipulate the DOM, manage functions, arrays, objects, conditionals and loops.'
     },
     {
       name: 'Neighborhood Map',
@@ -32,7 +33,8 @@ const datos = {
       code: 'https://github.com/efectusmagnus/neighborhood-map-udacity-p8',
       caption: "Museums in Paderborn!",
       type: 'REACT',
-      description: "A single-page application writing with React.js featuring a map of Paderborn's museums. The aim of this project was to understand and use API Services, such as Google Maps APIs and Foursquare."
+      description: "A single-page application writing with React.js featuring a map of Paderborn's museums.",
+      aim: 'The aim of this project was to understand and use API Services, such as Google Maps APIs and Foursquare.'
     },
     {
       name: "Restaurant Reviews",
@@ -42,7 +44,8 @@ const datos = {
       code: 'https://github.com/efectusmagnus/mws-restaurant-stage-1',
       caption: 'Find your cuisine in New York!',
       type: 'JS',
-      description: 'A Progressive Web Application written in “Vanilla” JavaScript. The main emphasis was in creating and chaining promises, which included writing a Service Worker to cache assets for offline use.'
+      description: 'A Progressive Web Application written in “Vanilla” JavaScript.',
+      aim: 'The main emphasis was in creating and chaining promises, which included writing a Service Worker to cache assets for offline use.'
     },
     {
       name: "MyReads",
@@ -52,7 +55,8 @@ const datos = {
       code: 'https://github.com/efectusmagnus/reactnd-project-myreads-starter',
       caption: 'Mark your books!',
       type: 'REACT',
-      description: 'A React Application that utilizes React components in order to manage the user interface of a virtual bookcase, which stores and categorizes books. Focal points: to render UI with React and External Data, manage the State and the App Location with React Router.'
+      description: 'A React Application that utilizes React components in order to manage the user interface of a virtual bookcase, which stores and categorizes books.',
+      aim: 'Focal points: to render UI with React and External Data, manage the State and the App Location with React Router.'
     }
   ],
   exercices: [
@@ -115,7 +119,9 @@ proCtn.innerHTML = `${datos.projects.map(project => `
     <button class="tooltip" role="tooltip" aria-describedby="mytooltip">
       <h4 class="project-name" style="text-align: center">${project.name}</h4>
       <span id="mytooltip" role="tooltip" class="tooltiptext" aria-hidden="true">
-        <p class="mini-description"><strong>Description: </strong>${project.description}</p>
+        <p class="mini-description"><strong>Description: </strong>${project.description}
+          ${project.aim ? `<br>${project.aim}` : ''}
+        </p>
       </span>
     </button>
     <a href="${project.code}">
