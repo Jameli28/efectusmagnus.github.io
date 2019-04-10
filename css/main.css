@@ -5,7 +5,6 @@
 
 body {
   font-family: "Work Sans", sans-serif;
-  /*display: Verdana, sans serif;*/
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
@@ -136,11 +135,16 @@ body {
   font-family: 'Nanum Pen Script', cursive;
   padding: 0 5em 0 5em;
 }
+.slideshow-ctn,
+.project-list,
+.show-hide {
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+}
 /* Popup tooltip*/
 /*-- Inspiration from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_tooltip--*/
+/*-- tooltip container --*/
 .tooltip {
   position: relative;
-  display: inline-block;
   /*border-bottom: 1px dotted black;*/
   border: transparent;
   background-color: transparent;
@@ -162,11 +166,7 @@ body {
   opacity: 0;
   transition: opacity 0.3s;
 }
-.slideshow-ctn,
-.project-list,
-.show-hide {
-  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
-}
+
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
@@ -177,17 +177,44 @@ body {
   border-style: solid;
   border-color: #555 transparent transparent transparent;
 }
+/* Desactivate border focus, excluding when using tab keys*/
+.tooltip:hover, .tooltip:active {
+    outline: none;
+}
+
 .tooltip:active .tooltiptext,
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
 }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
 .tooltip[aria-hidden="true"] {
   display: none;
 }
 .tooltip[aria-hidden="false"] {
   display: block;
 }
+/*.tooltip[aria-hidden="true"],
+.tooltiptext[aria-hidden="true"] {
+  visibility: hidden;
+}
+.tooltip[aria-hidden="false"],
+.tooltiptext[aria-hidden="false"] {
+  visibility: hidden;
+}*/
 .mini-description {
   padding: 0 0.5em 0 0.5em;
   font-size: 0.9em;
@@ -236,7 +263,6 @@ body {
 .project-link:hover,
 .show-hide:hover {
   background-color: #7d97ad;
-  padding: 0.1em;
   color: white;
   cursor: pointer;
 }
