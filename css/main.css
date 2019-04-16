@@ -486,7 +486,6 @@ a {
 /*-- Beginn of Social Media Icons --*/
 .social-midia-ctn {
   text-align: center;
-  /*background: gray;*/
   max-width: 1000px;
   margin: 0;
   padding: 1em;
@@ -533,7 +532,7 @@ a {
   content: '\f0d2';
 }
 
-.midia-icon {
+/*.midia-icon {
   background: #fff;
   color: #222;
   font-size: 14px;
@@ -543,24 +542,23 @@ a {
   left: -25px;
   right: -25px;
   padding: 5px 7px;
+  border-radius: 5px 5px;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all .4s;
   -moz-transition: all .4s;
   transition: all .4s;
-}
+}*/
 
-.midia-icon:before {
+/*.midia-icon:before {
   content: '';
-/*   width: 0;
-  height: 0; */
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-top: 5px solid #fff;
   position: absolute;
   bottom: -5px;
   left: 40px;
-}
+}*/
 
 .social:hover .midia-icon {
   bottom: 50px;
@@ -605,17 +603,8 @@ a {
 .social.linkedin .midia-icon {
   color: #0271ae;
 }
-
-.social.pinterest:hover {
-  background-color: #f22613;
-  color: #fff;
-}
-
-.social.pinterest .midia-icon {
-  color: #f22613;
-}
-
 /*-- End of Social Media Icons --*/
+
 footer {
   color: black;
   text-align: center;
