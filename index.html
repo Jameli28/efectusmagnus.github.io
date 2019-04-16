@@ -119,18 +119,16 @@
       </div>
     </div>
     <script>
-    /* Adaptation from: https://stackoverflow.com/questions/23906956/show-loading-icon-until-the-page-is-load#23907579*/
+    /* Loader icon. Adaptation from: https://stackoverflow.com/questions/23906956/show-loading-icon-until-the-page-is-load#23907579*/
     document.onreadystatechange = function () {
       const state = document.readyState;
       const contents = document.getElementById('contents');
       if (state == 'interactive') {
-           contents.style.display="none";
+        contents.style.display="none";
       } else if (state == 'complete') {
-          setTimeout(function(){
-             document.getElementById('interactive');
-             document.getElementById('loader-ctn').style.display="none";
-             contents.style.display="block";
-          },0);
+        document.getElementById('interactive');
+        document.getElementById('loader-ctn').style.display="none";
+        contents.style.display="block";
       }
     }
     </script>
