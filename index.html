@@ -13,10 +13,47 @@
     <link rel="stylesheet" href="css/main.css"><!--My layout-->
     <!-- Social media icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+      /*-- Show load icon before page loads completely --*/
+      #loader-ctn {
+        max-width: 1000px;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 99;
+      }
+      #load{
+        text-align: center;
+        position: relative;
+        z-index: 99;
+        top: calc(50vh - 60px);
+        margin: auto;
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid pink;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      }
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
     <title>July Habermann's portfolio</title>
   </head>
   <body>
-    <div class="site-container">
+    <!-- Loader icon -->
+    <section id="loader-ctn">
+      <div id="load"></div>
+    </section>
+    <div id="contents" class="site-container">
       <header>
         <!-- this svg is my logo -->
         <svg class="header-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172.62 172.62" aria-label="Efectusmagnus logo">
@@ -81,6 +118,22 @@
         </main>
       </div>
     </div>
+    <script>
+    /* Adaptation from: https://stackoverflow.com/questions/23906956/show-loading-icon-until-the-page-is-load#23907579*/
+    document.onreadystatechange = function () {
+      const state = document.readyState;
+      const contents = document.getElementById('contents');
+      if (state == 'interactive') {
+           contents.style.display="none";
+      } else if (state == 'complete') {
+          setTimeout(function(){
+             document.getElementById('interactive');
+             document.getElementById('loader-ctn').style.display="none";
+             contents.style.display="block";
+          },0);
+      }
+    }
+    </script>
     <script src="js/index.js"></script><!--JavaScript for the button-->
   </body>
 </html>
