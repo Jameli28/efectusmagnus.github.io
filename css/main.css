@@ -528,13 +528,6 @@ a {
   content: '\f0e1';
 }
 
-.social:hover .midia-icon {
-  bottom: 50px;
-  visibility: visible;
-  opacity: 1;
-}
-
-
 /* Hover through the icons */
 .social.behance:hover {
   background-color: #4183d7;
@@ -550,11 +543,12 @@ a {
   background-color: #000;
   color: #fff;
 }
-/* End of hover through the icons */
+
 .social.linkedin:hover {
   background-color: #0271ae;
   color: #fff;
 }
+/* End of hover through the icons */
 
 footer {
   color: black;
