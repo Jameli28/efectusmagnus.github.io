@@ -59,7 +59,7 @@ const datos = {
       code: 'https://github.com/efectusmagnus/reactnd-project-myreads-starter',
       caption: 'Mark your books!',
       type: 'REACT',
-      id: 'my-reads,
+      id: 'my-reads',
       description: 'A React Application that utilizes React components in order to manage the user interface of a virtual bookcase, which stores and categorizes books.',
       aim: 'Focal points: to render UI with React and External Data, manage the State and the App Location with React Router.'
     }
