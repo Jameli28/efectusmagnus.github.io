@@ -124,7 +124,7 @@ proCtn.innerHTML = `${datos.projects.map(project => `
     <a href="${project.enlace}">
       <img class="project-img" src="${project.image}" alt="${project.attribute}" style="max-width:311px">
     </a>
-    <button class="tooltip" role="tooltip" aria-describedby="${project.id}">
+    <button class="tooltip" aria-describedby="${project.id}">
       <h4 class="project-name" style="text-align: center">${project.name}</h4>
       <span id="${project.id}" role="tooltip" class="tooltiptext" aria-hidden="true">
         <p class="mini-description"><strong>Description: </strong>${project.description}
@@ -145,7 +145,7 @@ exerCtn.innerHTML = `${datos.exercices.map(exercice => `
     <a href="${exercice.enlace}">
       <img class="project-img" src="${exercice.image}" alt="${exercice.attribute}" style="max-width:311px">
     </a>
-    <button class="tooltip" role="tooltip" aria-describedby="${exercice.id}">
+    <button class="tooltip" aria-describedby="${exercice.id}">
       <h4 class="project-name" style="text-align: center">${exercice.name}</h4>
       <span id="${exercice.id}" role="tooltip" class="tooltiptext" aria-hidden="true">
         <p class="mini-description"><strong>Description: </strong>${exercice.description}</p>
