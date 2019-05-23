@@ -73,6 +73,7 @@ const datos = {
       code: 'https://codepen.io/Efectus-Magnus/pen/qxNeYz',
       caption: 'Your Imagination in Pixels!',
       type: 'jQUERY',
+      id: 'art-maker',
       description: 'A jQuerry application to draw with clicks.'
     },
     {
@@ -83,6 +84,7 @@ const datos = {
       code: 'https://github.com/efectusmagnus/efectusmagnus.github.io',
       caption: 'All around art!',
       type: 'CSS',
+      id: 'towns-news',
       description: 'Mainly based on CSS. This website mimics a simple online newspaper.'
     },
     {
@@ -93,6 +95,7 @@ const datos = {
       code: 'https://codepen.io/Efectus-Magnus/pen/WMXRaG',
       caption: 'A dark print!',
       type: 'HTML',
+      id: 'animal-card',
       description: 'An animal trading card. Mainly based on HTML and CSS to practice syntax, standard properties and values.'
     }
   ]
@@ -142,9 +145,9 @@ exerCtn.innerHTML = `${datos.exercices.map(exercice => `
     <a href="${exercice.enlace}">
       <img class="project-img" src="${exercice.image}" alt="${exercice.attribute}" style="max-width:311px">
     </a>
-    <button class="tooltip" role="tooltip" aria-describedby="mytooltip">
+    <button class="tooltip" role="tooltip" aria-describedby="${exercice.id}">
       <h4 class="project-name" style="text-align: center">${exercice.name}</h4>
-      <span id="mytooltip" role="tooltip" class="tooltiptext" aria-hidden="true">
+      <span id="${exercice.id}" role="tooltip" class="tooltiptext" aria-hidden="true">
         <p class="mini-description"><strong>Description: </strong>${exercice.description}</p>
       </span>
     </button>
