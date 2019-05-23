@@ -12,6 +12,7 @@ const datos = {
       code: 'https://github.com/efectusmagnus/new-arcade-game',
       caption: 'Collect gems and water points!',
       type: 'OOP',
+      id: 'frogger-game',
       description: 'Focused on object-oriented programming with "Vanilla" JavaScript, principally on classes and prototypes for creating a game on canvas.'
     },
     {
@@ -22,6 +23,7 @@ const datos = {
       code: 'https://github.com/efectusmagnus/memory-game',
       caption: 'Have fun trainning your brain!',
       type: 'DOM',
+      id: 'memory-game',
       description: 'A browser-based card matching game.',
       aim: 'Besides handling user input and implementing gameplay logic, the focal point of the project was to manipulate the DOM, manage functions, arrays, objects, conditionals and loops.'
     },
@@ -33,6 +35,7 @@ const datos = {
       code: 'https://github.com/efectusmagnus/neighborhood-map-udacity-p8',
       caption: "Museums in Paderborn!",
       type: 'REACT',
+      id: 'paderborn-map',
       description: "A single-page application writing with React.js featuring a map of Paderborn's museums.",
       aim: 'The aim of this project was to understand and use API Services, such as Google Maps APIs and Foursquare.'
     },
@@ -44,6 +47,7 @@ const datos = {
       code: 'https://github.com/efectusmagnus/mws-restaurant-stage-1',
       caption: 'Find your cuisine in New York!',
       type: 'JS',
+      id: 'restaurant-review',
       description: 'A Progressive Web Application written in “Vanilla” JavaScript.',
       aim: 'The main emphasis was in creating and chaining promises, which included writing a Service Worker to cache assets for offline use.'
     },
@@ -55,6 +59,7 @@ const datos = {
       code: 'https://github.com/efectusmagnus/reactnd-project-myreads-starter',
       caption: 'Mark your books!',
       type: 'REACT',
+      id: 'my-reads,
       description: 'A React Application that utilizes React components in order to manage the user interface of a virtual bookcase, which stores and categorizes books.',
       aim: 'Focal points: to render UI with React and External Data, manage the State and the App Location with React Router.'
     }
@@ -116,9 +121,9 @@ proCtn.innerHTML = `${datos.projects.map(project => `
     <a href="${project.enlace}">
       <img class="project-img" src="${project.image}" alt="${project.attribute}" style="max-width:311px">
     </a>
-    <button class="tooltip" role="tooltip" aria-describedby="mytooltip">
+    <button class="tooltip" role="tooltip" aria-describedby="${project.id}">
       <h4 class="project-name" style="text-align: center">${project.name}</h4>
-      <span id="mytooltip" role="tooltip" class="tooltiptext" aria-hidden="true">
+      <span id="${project.id}" role="tooltip" class="tooltiptext" aria-hidden="true">
         <p class="mini-description"><strong>Description: </strong>${project.description}
           ${project.aim ? `<br>${project.aim}` : ''}
         </p>
