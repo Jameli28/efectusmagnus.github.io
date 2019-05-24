@@ -15,9 +15,9 @@
     <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap">
     <link rel="stylesheet" href="css/main.css"><!--My layout-->
     <!-- Social media icons -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" attr="disabled" href="css/social-midia.css"><!--My layout-->
-    <!--<style>
+    <link rel="stylesheet" importance="low" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" importance="low" href="css/social-midia.css"><!--My layout-->
+    <style>
       /*-- Show load icon before page loads completely --*/
       /*-- Adapted from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader --*/
       #loader-ctn {
@@ -50,14 +50,14 @@
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
       }
-    </style>-->
+    </style>
     <title>July Habermann's portfolio</title>
   </head>
   <body>
     <!-- Loader icon -->
-    <!--<section id="loader-ctn">
+    <section id="loader-ctn">
       <div id="load"></div>
-    </section>-->
+    </section>
     <div id="contents" class="site-container">
       <header>
         <!-- this svg is my logo -->
@@ -124,7 +124,7 @@
         </main>
       </div>
     </div>
-    <!--<script>
+    <script>
     /* Loader icon. Adaptation from: https://stackoverflow.com/questions/23906956/show-loading-icon-until-the-page-is-load#23907579*/
     document.onreadystatechange = function () {
       const state = document.readyState;
@@ -138,7 +138,6 @@
       }
     }
     </script>
-  -->
     <script src="js/index.js"></script><!--Main JavaScript. -->
     <script src="js/main-interactivity.js" defer></script><!-- Animation -->
   </body>
