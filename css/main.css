@@ -207,14 +207,7 @@ body {
 .tooltip[aria-hidden="false"] {
   display: block;
 }
-/*.tooltip[aria-hidden="true"],
-.tooltiptext[aria-hidden="true"] {
-  visibility: hidden;
-}
-.tooltip[aria-hidden="false"],
-.tooltiptext[aria-hidden="false"] {
-  visibility: hidden;
-}*/
+
 .mini-description {
   padding: 0 0.5em 0 0.5em;
   font-size: 0.9em;
