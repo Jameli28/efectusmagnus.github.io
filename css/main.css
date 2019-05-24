@@ -321,11 +321,8 @@ a {
 
 header {
   width: 93%; /*so that it matches the vertical alignment of the content*/
-  margin-left: auto; /*with both margins, the content is centered*/
-  margin-right: auto;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
-  padding-bottom: 2vh;
+  margin: 0 auto; /*with both margins, the content is centered*/
+  padding: 0 0.6rem 2vh 0.6rem;
 }
 /*My logo*/
 .header-logo {
@@ -333,7 +330,6 @@ header {
   max-width: 52px;
   float: left; /* enables the titles to be besides the logo*/
   vertical-align: top;
-  fill: #02b3e4; /*like color, but for svg. So, "fill"*/
 }
 
 .header-title {
@@ -352,55 +348,11 @@ header {
   margin-top: 0.5em;
 }
 
+/* Underline of titles */
 .text-line {
-  fill: #7d97ad; /*this is the same as color, but for xml*/
+  fill: #7d97ad;
 }
 
-/*div of the owl image*/
-.cover-intro {
-  padding-bottom: 0;
-  padding-top: 20px;
-  width: 96%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*owl's svg code*/
-.project-main-cover {
-  overflow:hidden; /*without scrollbars*/
-  position: relative;
-  width: 100%;
-}
-/*beginn of owl svg code*/
-.corp{
-  fill:#7d97ad;
-}
-.w-eye{ /*white eyes*/
-  fill:#fff; /*#ffffff*/
-}
-.gray{
-  fill:#2d3c49;
-}
-.nose{
-  fill:#ededed;
-  stroke:#1d1d1b;
-  stroke-linecap:round;
-  stroke-miterlimit:10;
-}
-.wing{
-  opacity:0.36;
-  fill:#2d3c49;
-}
-.bubble{
-  fill:none;
-  stroke:#1d1d1b;
-  stroke-width:0.5846px;
-  stroke-linecap:round;
-  stroke-miterlimit:10;
-}
-.welcome {
-  font-family: 'Nanum Pen Script', cursive; /*Another Google Font*/
-}
 /*ends of owl svg code*/
 .show-hide:hover {
   background-color: #7d97ad;
