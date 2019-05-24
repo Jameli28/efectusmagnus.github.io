@@ -3,11 +3,14 @@
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
   max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 0.1em;
+}
+
+.main-titles,
+.project-link {
+  font-family: "Work Sans", sans-serif;
 }
 
 /*-- Slideshow container --*/
