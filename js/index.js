@@ -25,7 +25,7 @@ const datos = {
       type: 'DOM',
       id: 'memory-game',
       description: 'A browser-based card matching game.',
-      aim: 'Besides handling user input and implementing gameplay logic, the focal point of the project was to manipulate the DOM, manage functions, arrays, objects, conditionals and loops.'
+      aim: 'Besides handling user input and implementing gameplay logic, this application manipulates the DOM, manages functions, arrays, objects, conditionals and loops.'
     },
     {
       name: 'Neighborhood Map',
