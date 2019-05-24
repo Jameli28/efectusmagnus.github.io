@@ -37,7 +37,7 @@ const datos = {
       type: 'REACT',
       id: 'paderborn-map',
       description: "A single-page application writing with React.js featuring a map of Paderborn's museums.",
-      aim: 'The aim of this project was to understand and use API Services, such as Google Maps APIs and Foursquare.'
+      aim: 'This project uses API Services, such as Google Maps APIs and Foursquare.'
     },
     {
       name: "Restaurant Reviews",
@@ -60,7 +60,7 @@ const datos = {
       caption: 'Mark your books!',
       type: 'REACT',
       id: 'my-reads',
-      description: 'A React Application that utilizes React components in order to manage the user interface of a virtual bookcase, which stores and categorizes books.',
+      description: 'A React Application to manage the user interface of a virtual bookcase, which stores and categorizes books.',
       aim: 'Focal points: to render UI with React and External Data, manage the State and the App Location with React Router.'
     }
   ],
